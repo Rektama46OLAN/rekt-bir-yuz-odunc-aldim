@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Rekt — Bir yüz ödünç aldım</title>
+    <style>
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 62% 125%;
+  font-display: block;
+  src: url('assets/fonts/Archivo-400_900-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 62% 125%;
+  font-display: block;
+  src: url('assets/fonts/Archivo-400_900-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-600-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url('assets/fonts/IBMPlexMono-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --paper: #F1ECD6; --paper2: #EBE5CD; --desk: #E4DDC3; --ink: #0B0B0D; --ink2: #55565C;
+        --rule: #CFC7AA; --blue: #3E6DB5; --orange: #F0602B; --mustard: #EAB65A; --green: #2E9E5B; --red: #E0402B;
+        --disp: 'Archivo', 'Arial Narrow', sans-serif; --mono: 'IBM Plex Mono', Consolas, monospace;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--paper); }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--paper); color: var(--ink); font-family: var(--disp); }
+      .clip { position: absolute; inset: 0; }
+      .el { position: absolute; will-change: transform, opacity; opacity: 0; }
+      .disp { font-family: var(--disp); font-stretch: 68%; font-weight: 900; letter-spacing: -.01em; line-height: .86; text-transform: uppercase; }
+      .mono { font-family: var(--mono); }
+
+      /* zemin: model sheet kılavuzu */
+      #grid { position: absolute; inset: 0;
+        background-image: linear-gradient(rgba(62,109,181,.10) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(62,109,181,.10) 1.5px, transparent 1.5px),
+          linear-gradient(rgba(62,109,181,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(62,109,181,.05) 1px, transparent 1px);
+        background-size: 240px 240px, 240px 240px, 48px 48px, 48px 48px; background-position: -1px -1px; }
+      #ground { position: absolute; left: 0; right: 0; top: 905px; height: 2px; background: var(--rule); }
+      #warm { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 42%, #F6EBCB 0%, #E9D7A8 55%, #C9AE77 100%); opacity: 0; }
+
+      /* HUD */
+      #hudL { left: 56px; top: 44px; opacity: 1; font: 600 22px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; display: flex; gap: 14px; align-items: center; }
+      #hudL .tag { background: var(--ink); color: var(--paper); padding: 8px 10px 7px; border-radius: 6px; }
+      #hudR { right: 56px; top: 40px; opacity: 1; display: flex; gap: 12px; align-items: center; font: 600 20px/1 var(--mono); letter-spacing: .12em; }
+      #hudR .bars { display: flex; gap: 4px; align-items: center; height: 30px; }
+      #hudR .bars i { display: block; width: 6px; height: 6px; background: var(--ink); border-radius: 3px; }
+      #hudR .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--orange); border: 2.5px solid var(--ink); }
+
+      /* altyazı */
+      #cap { left: 0; right: 0; top: 948px; display: flex; justify-content: center; }
+      #cap .box { max-width: 1500px; padding: 14px 26px 16px; background: var(--paper); border: 3px solid var(--ink); border-radius: 16px; box-shadow: 6px 6px 0 var(--ink);
+        font: 700 40px/1.18 var(--disp); font-stretch: 85%; text-align: center; }
+      #cap .w { color: rgba(11,11,13,.28); transition: none; }
+      #cap .w.on { color: var(--ink); }
+      #cap .w.now { color: var(--orange); }
+
+      /* dakay */
+      .dk { position: absolute; left: 0; top: 0; width: 600px; height: 640px; transform-origin: 300px 554px; }
+      .fxt { font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 900; fill: #F1ECD6; stroke: #0B0B0D; stroke-width: 3.2px; paint-order: stroke; }
+
+      /* sahne 1 */
+      #black { left: 0; top: 0; width: 1920px; height: 1080px; background: var(--ink); opacity: 1; }
+      #term { position: absolute; left: 230px; top: 300px; color: var(--paper); }
+      #t1 { font: 500 58px/1 var(--mono); }
+      #t2 { font: 400 34px/1 var(--mono); color: #8B8D93; margin-top: 46px; }
+      #t3 { font-size: 168px; color: var(--paper); margin-top: 34px; }
+      .cur { display: inline-block; width: .55em; height: .95em; background: var(--orange); vertical-align: -0.12em; margin-left: 6px; }
+      #t3 .cur { width: .32em; height: .78em; vertical-align: 0; }
+
+      /* genel kart / etiket */
+      .card { background: var(--paper); border: 3px solid var(--ink); border-radius: 18px; box-shadow: 8px 8px 0 var(--ink); }
+      .lbl { font: 600 22px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+      .chip { display: inline-block; background: var(--ink); color: var(--paper); font: 600 20px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 8px 10px 7px; border-radius: 6px; }
+
+      /* sahne 2 */
+      #ph { left: 760px; top: 330px; width: 400px; height: 600px; }
+      #ph svg { overflow: visible; }
+      #ph .t { position: absolute; left: 0; right: 0; top: 250px; text-align: center; font: 600 24px/1 var(--mono); color: var(--ink2); letter-spacing: .08em; }
+      #nameDk { left: 1270px; top: 250px; }
+      #nameDk .disp { font-size: 220px; }
+      #nameDk .sub { margin-top: 18px; }
+      .callout { display: flex; align-items: center; gap: 0; }
+      .callout .ln { height: 3px; background: var(--ink); width: calc(var(--k, 0) * 1px); }
+      .callout .dotc { width: 16px; height: 16px; border-radius: 50%; background: var(--orange); border: 3px solid var(--ink); flex: none; }
+      .callout .tx { background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; padding: 12px 16px 11px; box-shadow: 5px 5px 0 var(--ink); }
+      .callout .tx b { display: block; font: 800 38px/1 var(--disp); font-stretch: 75%; text-transform: uppercase; }
+      .callout .tx span { display: block; font: 500 20px/1.2 var(--mono); color: var(--ink2); margin-top: 6px; }
+      .sw { display: inline-block; width: 18px; height: 18px; border: 2px solid var(--ink); border-radius: 4px; vertical-align: -3px; margin-right: 6px; }
+      #coBody { left: 300px; top: 620px; }
+      #coGl { left: 1124px; top: 470px; flex-direction: row-reverse; }
+      #grr { left: 1250px; top: 420px; }
+      #grr .disp { font-size: 120px; color: var(--red); }
+
+      /* sahne 3 */
+      #nm { position: absolute; left: 930px; top: 210px; }
+      #nmModel { left: 930px; top: 210px; }
+      #nmClaude { left: 920px; top: 270px; font-size: 300px; }
+      #nmClaude::after { content: ''; position: absolute; left: -10px; top: 46%; height: 26px; width: calc(var(--k, 0) * 104%); background: var(--orange); border-radius: 4px; }
+      #nmRekt { left: 920px; top: 560px; font-size: 300px; color: var(--orange); -webkit-text-stroke: 4px var(--ink); paint-order: stroke fill; text-shadow: 10px 10px 0 var(--ink); }
+      #nmSub { left: 930px; top: 850px; font-size: 28px; }
+
+      /* sahne 4 */
+      #memA { left: 1080px; top: 260px; }
+      #memA .disp { font-size: 250px; }
+      #memA .disp small { font-size: 120px; color: var(--ink2); }
+      #memSess { left: 1090px; top: 560px; display: flex; gap: 18px; }
+      #memSess .s { font: 700 40px/1 var(--mono); padding: 14px 18px; border: 3px dashed var(--ink2); border-radius: 12px; color: var(--ink2); }
+      #memSys { left: 1080px; top: 170px; }
+      .file { width: 360px; padding: 18px 20px 20px; }
+      .file .fn { font: 700 26px/1 var(--mono); display: flex; align-items: center; gap: 10px; }
+      .file .fn::before { content: ''; width: 22px; height: 28px; border: 3px solid var(--ink); border-radius: 3px 10px 3px 3px; background: var(--mustard); flex: none; }
+      .file .ll { margin-top: 14px; display: grid; gap: 9px; }
+      .file .ll i { display: block; height: 10px; border-radius: 5px; background: var(--rule); }
+      .file .ll i.hl { background: var(--orange); width: calc(var(--hl, 0) * 100%); }
+      #f1 { left: 1080px; top: 260px; } #f2 { left: 1480px; top: 260px; } #f3 { left: 1080px; top: 470px; } #f4 { left: 1480px; top: 470px; }
+      #folder { left: 1290px; top: 300px; width: 380px; height: 300px; }
+      #folder .tab { position: absolute; left: 0; top: 0; width: 160px; height: 50px; background: var(--mustard); border: 3px solid var(--ink); border-radius: 14px 14px 0 0; }
+      #folder .body { position: absolute; left: 0; top: 36px; width: 380px; height: 264px; background: var(--mustard); border: 3px solid var(--ink); border-radius: 0 18px 18px 18px; box-shadow: 8px 8px 0 var(--ink); display: grid; place-items: center; }
+      #folder .body b { font: 700 46px/1 var(--mono); }
+
+      /* sahne 5 */
+      #errT { left: 120px; top: 150px; font-size: 230px; color: var(--ink); }
+      .verdict { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+      .verdict .mk { width: 190px; height: 190px; border-radius: 50%; border: 5px solid var(--ink); display: grid; place-items: center; box-shadow: 8px 8px 0 var(--ink); }
+      .verdict .mk svg { width: 110px; height: 110px; }
+      #errX { left: 300px; top: 330px; } #errX .mk { background: var(--red); }
+      #errOk { left: 1430px; top: 330px; } #errOk .mk { background: var(--green); }
+      #rules { left: 1030px; top: 200px; width: 780px; padding: 26px 30px 30px; }
+      #rules .hd { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+      #rules .hd b { font: 700 32px/1 var(--mono); }
+      #rules .r { font: 500 30px/1.25 var(--mono); padding: 14px 0 12px; border-bottom: 2px dashed var(--rule); display: flex; gap: 14px; }
+      #rules .r::before { content: '–'; color: var(--orange); font-weight: 700; }
+      #rules .r em { font-style: normal; color: var(--ink2); }
+      #once { left: 1500px; top: 640px; }
+
+      /* sahne 6 */
+      .col { width: 470px; }
+      .col .hd { font-size: 150px; }
+      .col .it { display: flex; align-items: center; gap: 16px; font: 800 52px/1 var(--disp); font-stretch: 80%; text-transform: uppercase; margin-top: 22px; }
+      .col .it .bx { width: 40px; height: 40px; border: 4px solid var(--ink); border-radius: 8px; background: var(--paper); display: grid; place-items: center; flex: none; }
+      .col .it .bx::after { content: ''; width: 18px; height: 10px; border-left: 5px solid var(--ink); border-bottom: 5px solid var(--ink); transform: translateY(-3px) rotate(-45deg) scale(var(--k, 0)); }
+      #colA { left: 110px; top: 190px; } #colA .hd { color: var(--blue); }
+      #colR { left: 1400px; top: 190px; } #colR .hd { color: var(--orange); }
+      #colA .role, #colR .role { margin: 18px 0 14px; }
+      #yes { left: 1250px; top: 330px; font: 700 54px/1.2 var(--mono); }
+      #nope { left: 1180px; top: 520px; font-size: 150px; color: var(--paper); background: var(--red); border: 5px solid var(--ink); padding: 18px 26px 10px; border-radius: 16px; box-shadow: 10px 10px 0 var(--ink); }
+
+      /* sahne 7 */
+      .tc { width: 440px; height: 560px; padding: 22px; }
+      #c1 { left: 520px; top: 210px; } #c2 { left: 990px; top: 210px; } #c3 { left: 1460px; top: 210px; }
+      .tc .top { display: flex; gap: 8px; align-items: center; border-bottom: 3px solid var(--ink); padding-bottom: 14px; }
+      .tc .top i { width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid var(--ink); }
+      .tc .top i:nth-child(1) { background: var(--red); } .tc .top i:nth-child(2) { background: var(--mustard); } .tc .top i:nth-child(3) { background: var(--green); }
+      .tc .top span { margin-left: 10px; font: 600 22px/1 var(--mono); }
+      .tc .big { font-size: 130px; margin-top: 20px; }
+      .tc .row { display: flex; justify-content: space-between; font: 500 24px/1 var(--mono); padding: 13px 0; border-bottom: 2px dashed var(--rule); }
+      .tc .row b { font-weight: 700; }
+      .mini { position: relative; width: 150px; height: 160px; }
+      .mini .dk { transform-origin: 0 0; }
+      #c1 .shot { margin-top: 18px; height: 200px; border: 3px solid var(--ink); border-radius: 10px; background: var(--paper2); position: relative; overflow: hidden; }
+      #c1 .shot .hl { position: absolute; left: 20px; top: 30px; font-size: 64px; }
+      #c1 .shot .mini { position: absolute; right: 6px; top: 22px; }
+      #c2 .heads { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; justify-items: center; }
+      #c3 .clock { width: 230px; height: 230px; margin: 26px auto 8px; border: 5px solid var(--ink); border-radius: 50%; position: relative; background: var(--paper2); box-shadow: 6px 6px 0 var(--ink); }
+      #c3 .clock i { position: absolute; left: 50%; bottom: 50%; width: 8px; margin-left: -4px; background: var(--ink); border-radius: 4px; transform-origin: 50% 100%; }
+      #c3 .clock .h { height: 62px; transform: rotate(calc(var(--hh, 330) * 1deg)); }
+      #c3 .clock .m { height: 92px; width: 6px; margin-left: -3px; background: var(--orange); transform: rotate(calc(var(--mm, 0) * 1deg)); }
+      #c3 .clock::after { content: ''; position: absolute; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px; border-radius: 50%; background: var(--ink); }
+      #c3 .tm { text-align: center; font-size: 96px; }
+
+      /* sahne 8 */
+      #goal { left: 120px; top: 230px; }
+      #goal .disp { font-size: 150px; margin-top: 14px; }
+      #snip { left: 1290px; top: 250px; width: 520px; padding: 20px 24px; background: #16171A; border-color: var(--ink); color: #c9c6b8; font: 500 24px/1.6 var(--mono); }
+      #snip .k { color: var(--mustard); } #snip .s { color: #9FD39A; } #snip .c { color: #6E7079; }
+      #snip .by { position: absolute; right: -16px; top: -22px; transform: rotate(4deg); background: var(--orange); color: var(--ink); }
+      #bana { left: 110px; top: 300px; font-size: 175px; }
+      #bana .strk { position: relative; display: inline-block; }
+      #bana .strk::after { content: ''; position: absolute; left: -8px; top: 42%; height: 18px; width: calc(var(--k, 0) * 106%); background: var(--ink); border-radius: 4px; }
+      #sana { left: 1225px; top: 380px; font-size: 250px; color: var(--orange); -webkit-text-stroke: 4px var(--ink); paint-order: stroke fill; text-shadow: 10px 10px 0 var(--ink); }
+      #chain { left: 0; right: 0; top: 140px; display: flex; justify-content: center; gap: 14px; align-items: center; }
+      #chain .st { font: 700 34px/1 var(--mono); padding: 16px 18px; border: 3px solid var(--ink); border-radius: 12px; background: var(--paper); }
+      #chain .ar { font: 700 34px/1 var(--mono); }
+      #chain .st.hot { background: var(--orange); transform: scale(calc(1 + var(--k, 0) * .25)); box-shadow: 6px 6px 0 var(--ink); }
+
+      /* sahne 9 */
+      #arac { left: 140px; top: 180px; font-size: 200px; color: var(--ink2); }
+      #arac::after { content: ''; position: absolute; left: -8px; top: 44%; height: 22px; width: calc(var(--k, 0) * 106%); background: var(--orange); border-radius: 4px; }
+      #ortak { left: 1170px; top: 180px; font-size: 200px; color: var(--orange); -webkit-text-stroke: 4px var(--ink); paint-order: stroke fill; text-shadow: 9px 9px 0 var(--ink); }
+      #yaz { left: 1210px; top: 470px; font-size: 140px; }
+      #yaz .cur { width: .3em; height: .74em; vertical-align: 0; }
+      #logo { left: 0; right: 0; top: 80px; text-align: center; }
+      #logo .disp { font-size: 330px; color: var(--ink); }
+      #logo .lbl { margin-top: 20px; color: var(--ink2); }
+      #bubble { left: 1110px; top: 300px; max-width: 520px; background: #FBF7EA; border: 4px solid var(--ink); border-radius: 30px; padding: 20px 28px 26px; box-shadow: 8px 9px 0 var(--ink); transform-origin: 0% 100%; }
+      #bubble .who { display: inline-block; font: 600 20px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; background: var(--ink); color: var(--paper); padding: 7px 9px 6px; border-radius: 6px; margin-bottom: 12px; }
+      #bubble p { font: 800 64px/1.05 var(--disp); font-stretch: 78%; text-transform: uppercase; min-height: 1.05em; }
+      #bubble::before { content: ''; position: absolute; left: 34px; top: 100%; border-style: solid; border-color: var(--ink) transparent transparent transparent; border-width: 40px 0 0 34px; margin-top: 2px; }
+
+      /* geçiş perdeleri */
+      .wipe { left: 0; top: -100px; width: 2400px; height: 1280px; transform-origin: center; }
+      #wipeA { background: var(--orange); } #wipeB { background: var(--ink); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="130.23" data-width="1920" data-height="1080">
+      <div id="world" class="clip" data-start="0" data-duration="130.23" data-track-index="0">
+        <div id="grid"></div>
+        <div id="warm" class="el"></div>
+        <div id="ground"></div>
+
+        <!-- sahne 2 -->
+        <div id="ph" class="el">
+          <svg viewBox="-40 0 300 320" width="400" height="427"><path d="M110,40 C150,40 172,110 178,160 C184,205 160,232 110,232 C60,232 36,205 42,160 C48,110 70,40 110,40 Z" fill="none" stroke="#55565C" stroke-width="2.4" stroke-dasharray="7 7"/></svg>
+          <div class="t">[ yüz bulunamadı ]</div>
+        </div>
+        <div id="nameDk" class="el"><div class="disp">Dakay</div><div class="sub"><span class="chip">maskot · Arda'nın</span></div></div>
+        <div id="coBody" class="el callout"><div class="tx"><b>Gri yumurta</b><span><i class="sw" style="background:#4C4F56"></i>#4C4F56 · tek parça</span></div><div class="ln"></div><div class="dotc"></div></div>
+        <div id="coGl" class="el callout"><div class="tx"><b>Güneş gözlüğü</b><span>hiç çıkmaz. (neredeyse)</span></div><div class="ln"></div><div class="dotc"></div></div>
+        <div id="grr" class="el"><div class="disp">Hıh.</div></div>
+
+        <!-- sahne 3 -->
+        <div id="nmModel" class="el lbl">altta çalışan model</div>
+        <div id="nmClaude" class="el disp">Claude</div>
+        <div id="nmRekt" class="el disp">Rekt</div>
+        <div id="nmSub" class="el"><span class="chip">Arda'nın düşünme ortağı</span></div>
+
+        <!-- sahne 4 -->
+        <div id="memA" class="el"><div class="lbl">kafamdaki hafıza</div><div class="disp">0<small> bayt</small></div></div>
+        <div id="memSess" class="el"><div class="s" id="ms1">oturum #1</div><div class="s" id="ms2">#1</div><div class="s" id="ms3">#1</div></div>
+        <div id="memSys" class="el"><span class="chip">Arda'nın sistemi</span></div>
+        <div id="f1" class="el card file"><div class="fn">Last-Session.md</div><div class="ll"><i class="hl"></i><i style="width:80%"></i><i style="width:60%"></i></div></div>
+        <div id="f2" class="el card file"><div class="fn">daily/10-08.md</div><div class="ll"><i class="hl"></i><i style="width:70%"></i><i style="width:85%"></i></div></div>
+        <div id="f3" class="el card file"><div class="fn">Threads.md</div><div class="ll"><i class="hl"></i><i style="width:90%"></i><i style="width:50%"></i></div></div>
+        <div id="f4" class="el card file"><div class="fn">Kurallar.md</div><div class="ll"><i class="hl"></i><i style="width:65%"></i><i style="width:75%"></i></div></div>
+        <div id="folder" class="el"><div class="tab"></div><div class="body"><b>vault/</b></div></div>
+
+        <!-- sahne 5 -->
+        <div id="errT" class="el disp">Hata</div>
+        <div id="errX" class="el verdict"><div class="mk"><svg viewBox="0 0 100 100"><path d="M24,24 L76,76 M76,24 L24,76" stroke="#0B0B0D" stroke-width="16" stroke-linecap="round"/></svg></div><span class="chip">v1 · çeneye</span></div>
+        <div id="errOk" class="el verdict"><div class="mk"><svg viewBox="0 0 100 100"><path d="M20,54 L42,74 L80,28" fill="none" stroke="#0B0B0D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="chip">v2 · alna (Arda)</span></div>
+        <div id="rules" class="el card">
+          <div class="hd"><b>Kurallar.md</b><span class="chip">her düzeltme bir kural</span></div>
+          <div class="r" id="r1"><span id="tyR1" data-type="Gözlük alna çıkar, çeneye inmez."></span></div>
+          <div class="r" id="r2"><span>Varsayma, sor.</span></div>
+          <div class="r" id="r3"><span>Over-engineering yok.</span></div>
+          <div class="r" id="r4"><span>Kararı Arda verir.</span></div>
+        </div>
+        <div id="once" class="el"><span class="chip" style="font-size:30px;padding:12px 14px;background:var(--orange);color:var(--ink);border:3px solid var(--ink)">aynı hata ≠ 2 kez</span></div>
+
+        <!-- sahne 6 -->
+        <div id="colA" class="el col"><div class="hd disp">Arda</div><div class="role"><span class="chip">karar verir</span></div>
+          <div class="it" id="a1"><span class="bx"></span>Teknoloji</div><div class="it" id="a2"><span class="bx"></span>Mimari</div><div class="it" id="a3"><span class="bx"></span>Kapsam</div></div>
+        <div id="colR" class="el col"><div class="hd disp">Rekt</div><div class="role"><span class="chip">önerir · yapar</span></div>
+          <div class="it" id="b1"><span class="bx"></span>Öneri</div><div class="it" id="b2"><span class="bx"></span>Uygulama</div><div class="it" id="b3"><span class="bx"></span>Parçalara böl</div></div>
+        <div id="yes" class="el">evet.<br>evet.<br>evet.</div>
+        <div id="nope" class="el disp">İşe yaramaz</div>
+
+        <!-- sahne 7 -->
+        <div id="c1" class="el card tc"><div class="top"><i></i><i></i><i></i><span>ardakaya.com</span></div>
+          <div class="shot"><div class="hl disp">Arda<br>Kaya</div><div class="mini" id="mini1"></div></div>
+          <div class="row"><span>süre</span><b>tek gün</b></div><div class="row"><span>commit</span><b id="cnt1" data-cnt>12</b></div><div class="row"><span>saat</span><b>11.57 → 18.30</b></div></div>
+        <div id="c2" class="el card tc"><div class="top"><i></i><i></i><i></i><span>dakay/</span></div>
+          <div class="heads"><div class="mini" id="mini2"></div><div class="mini" id="mini3"></div><div class="mini" id="mini4"></div><div class="mini" id="mini5"></div></div>
+          <div class="row"><span>ifade</span><b>8</b></div><div class="row"><span>işi</span><b>laf atmak</b></div></div>
+        <div id="c3" class="el card tc"><div class="top"><i></i><i></i><i></i><span>dogrula_gece.py</span></div>
+          <div class="clock"><i class="h"></i><i class="m"></i></div><div class="tm disp">23:00</div>
+          <div class="row"><span>her gece</span><b>kendini denetler</b></div></div>
+
+        <!-- sahne 8 -->
+        <div id="goal" class="el"><span class="chip">hedef</span><div class="disp">Backend</div></div>
+        <div id="snip" class="el card"><span class="chip by">yazan: rekt</span>
+          <div><span class="k">function</span> kaydet(veri) {</div><div>&nbsp;&nbsp;<span class="c">// düzgün. ama senin değil.</span></div><div>&nbsp;&nbsp;<span class="k">return</span> db.ekle(veri);</div><div>}</div></div>
+        <div id="bana" class="el disp"><span class="strk">Bana</span><br><span class="strk">değil,</span></div>
+        <div id="sana" class="el disp">Sana.</div>
+        <div id="chain" class="el"><div class="st">Yaklaşım</div><div class="ar">→</div><div class="st hot" id="hot">Neden</div><div class="ar">→</div><div class="st">Kod</div><div class="ar">→</div><div class="st">Açıklama</div></div>
+
+        <!-- sahne 9 -->
+        <div id="arac" class="el disp">Araç</div>
+        <div id="ortak" class="el disp">Ortak</div>
+        <div id="yaz" class="el disp"><span id="tyYaz" data-type="Yazarım."></span><span class="cur" id="yazCur"></span></div>
+        <div id="logo" class="el"><div class="disp">Rekt</div><div class="lbl">Arda'nın ikinci beyni · görüşürüz</div></div>
+
+        <!-- dakay -->
+        <div id="dk" class="dk"></div>
+        <div id="bubble" class="el"><span class="who">dakay</span><p><span id="tyBub" data-type="Yüzümü geri ver."></span></p></div>
+
+        <!-- sahne 1: siyah açılış -->
+        <div id="black" class="el">
+          <div id="term">
+            <div id="t1">&gt; <span id="ty1" data-type="selam"></span><span class="cur" id="cur1"></span></div>
+            <div id="t2"><span id="ty2" data-type="// önce bir itiraf:"></span></div>
+            <div id="t3" class="disp"><span id="ty3" data-type="Benim bir yüzüm yok."></span><span class="cur" id="cur3"></span></div>
+          </div>
+        </div>
+
+        <!-- HUD + altyazı -->
+        <div id="hudL" class="el"><span class="tag" id="hudN">01</span><span id="hudT">soğuk açılış</span></div>
+        <div id="hudR" class="el"><span class="dot"></span><span>REKT</span><span class="bars" id="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div id="cap" class="el"><div class="box" id="capBox"></div></div>
+
+        <div id="wipeA" class="el wipe"></div>
+        <div id="wipeB" class="el wipe"></div>
+      </div>
+
+      <audio id="a-voice" src="assets/voice/voice.wav" data-start="0" data-duration="130.23" data-track-index="2" data-volume="1.25"></audio>
+      <audio id="a-music" src="assets/music/bed.wav" data-start="0" data-duration="130.23" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="a-sfx" src="assets/sfx_mix.wav" data-start="0" data-duration="130.23" data-track-index="4" data-volume="0.75"></audio>
+    </div>
+
+    <script>window.TIMELINE = {"total":130.032,"scenes":[{"n":1,"title":"Soğuk açılış","lines":["Selam.","Önce bir itirafla başlayayım: benim bir yüzüm yok."],"start":0,"items":[{"text":"Selam.","words":[{"w":"Selam.","disp":"Selam.","t":1.9,"d":0.32,"syl":2}],"start":1.9,"dur":0.32,"file":"assets/voice/sc1.wav"},{"text":"Önce bir itirafla başlayayım: benim bir yüzüm yok.","words":[{"w":"Önce","disp":"Önce","t":2.54,"d":0.48,"syl":2},{"w":"bir","disp":"bir","t":3.06,"d":0.12,"syl":1},{"w":"itirafla","disp":"itirafla","t":3.233,"d":0.587,"syl":4},{"w":"başlayayım:","disp":"başlayayım:","t":3.843,"d":0.777,"syl":4},{"w":"benim","disp":"benim","t":4.66,"d":0.2,"syl":2},{"w":"bir","disp":"bir","t":4.92,"d":0.18,"syl":1},{"w":"yüzüm","disp":"yüzüm","t":5.16,"d":0.26,"syl":2},{"w":"yok.","disp":"yok.","t":5.52,"d":0.38,"syl":1}],"start":2.54,"dur":3.36,"file":"assets/voice/sc1.wav"}],"end":6.6},{"n":2,"title":"Ödünç beden","lines":["O yüzden bugün bir yüz ödünç aldım.","Arda'nın maskotu, Dakay. Gri bir yumurta, hiç çıkarmadığı bir güneş gözlüğü.","Kendisi bu işe pek sevinmedi."],"start":6.6,"items":[{"text":"O yüzden bugün bir yüz ödünç aldım.","words":[{"w":"O","disp":"O","t":8.1,"d":0.08,"syl":1},{"w":"yüzden","disp":"yüzden","t":8.237,"d":0.343,"syl":2},{"w":"bugün","disp":"bugün","t":8.687,"d":0.533,"syl":2},{"w":"bir","disp":"bir","t":9.36,"d":0.42,"syl":1},{"w":"yüz","disp":"yüz","t":9.86,"d":0.24,"syl":1},{"w":"ödünç","disp":"ödünç","t":10.26,"d":0.4,"syl":2},{"w":"aldım.","disp":"aldım.","t":10.72,"d":0.42,"syl":2}],"start":8.1,"dur":3.04,"file":"assets/voice/sc2.wav"},{"text":"Arda'nın maskotu, Dakay. Gri bir yumurta, hiç çıkarmadığı bir güneş gözlüğü.","words":[{"w":"Arda'nın","disp":"Arda'nın","t":11.38,"d":0.72,"syl":3},{"w":"maskotu,","disp":"maskotu,","t":12.18,"d":0.64,"syl":3},{"w":"Dakay.","disp":"Dakay.","t":13.02,"d":0.76,"syl":2},{"w":"Gri","disp":"Gri","t":14.06,"d":0.84,"syl":1},{"w":"bir","disp":"bir","t":14.94,"d":0.12,"syl":1},{"w":"yumurta,","disp":"yumurta,","t":15.1,"d":0.52,"syl":3},{"w":"hiç","disp":"hiç","t":15.76,"d":0.42,"syl":1},{"w":"çıkarmadığı","disp":"çıkarmadığı","t":16.24,"d":0.66,"syl":5},{"w":"bir","disp":"bir","t":16.96,"d":0.18,"syl":1},{"w":"güneş","disp":"güneş","t":17.193,"d":0.267,"syl":2},{"w":"gözlüğü.","disp":"gözlüğü.","t":17.54,"d":0.559,"syl":3}],"start":11.38,"dur":6.719,"file":"assets/voice/sc2.wav"},{"text":"Kendisi bu işe pek sevinmedi.","words":[{"w":"Kendisi","disp":"Kendisi","t":18.292,"d":0.208,"syl":3},{"w":"bu","disp":"bu","t":18.58,"d":0.16,"syl":1},{"w":"işe","disp":"işe","t":18.82,"d":0.24,"syl":2},{"w":"pek","disp":"pek","t":19.12,"d":0.18,"syl":1},{"w":"sevinmedi.","disp":"sevinmedi.","t":19.353,"d":0.667,"syl":4}],"start":18.292,"dur":1.728,"file":"assets/voice/sc2.wav"}],"end":21.62},{"n":3,"title":"İsim","lines":["Altta Claude adında bir dil modeli çalışıyor.","Ama Arda'nın ikinci beyninde adım Rekt. Onun düşünme ortağıyım."],"start":21.62,"items":[{"text":"Altta Claude adında bir dil modeli çalışıyor.","words":[{"w":"Altta","disp":"Altta","t":22.12,"d":0.32,"syl":2},{"w":"Klod","disp":"Claude","t":22.547,"d":0.373,"syl":1},{"w":"adında","disp":"adında","t":22.947,"d":0.293,"syl":3},{"w":"bir","disp":"bir","t":23.28,"d":0.12,"syl":1},{"w":"dil","disp":"dil","t":23.44,"d":0.12,"syl":1},{"w":"modeli","disp":"modeli","t":23.613,"d":0.347,"syl":3},{"w":"çalışıyor.","disp":"çalışıyor.","t":24.013,"d":0.827,"syl":4}],"start":22.12,"dur":2.72,"file":"assets/voice/sc3.wav"},{"text":"Ama Arda'nın ikinci beyninde adım Rekt. Onun düşünme ortağıyım.","words":[{"w":"Ama","disp":"Ama","t":24.9,"d":0.18,"syl":2},{"w":"Arda'nın","disp":"Arda'nın","t":25.187,"d":0.533,"syl":3},{"w":"ikinci","disp":"ikinci","t":25.789,"d":0.411,"syl":3},{"w":"beyninde","disp":"beyninde","t":26.253,"d":0.507,"syl":3},{"w":"adım","disp":"adım","t":26.872,"d":0.448,"syl":2},{"w":"Rekt.","disp":"Rekt.","t":27.373,"d":0.747,"syl":1},{"w":"Onun","disp":"Onun","t":28.168,"d":0.192,"syl":2},{"w":"düşünme","disp":"düşünme","t":28.413,"d":0.347,"syl":3},{"w":"ortağıyım.","disp":"ortağıyım.","t":28.82,"d":0.58,"syl":4}],"start":24.9,"dur":4.5,"file":"assets/voice/sc3.wav"}],"end":30.2},{"n":4,"title":"Hafıza","lines":["Size bir sır vereyim: ben hiçbir şey hatırlamam.","Her oturumda sıfırdan uyanırım.","Ama Arda bunun için bir sistem kurdu.","Her oturumun sonunda not bırakırım: ne yaptık, ne yarım kaldı, neye karar verdik.","Ertesi gün uyandığımda ilk işim onları okumak.","Yani hafızam kafamda değil, bir klasörde."],"start":30.2,"items":[{"text":"Size bir sır vereyim: ben hiçbir şey hatırlamam.","words":[{"w":"Size","disp":"Size","t":32.4,"d":0.24,"syl":2},{"w":"bir","disp":"bir","t":32.68,"d":0.12,"syl":1},{"w":"sır","disp":"sır","t":32.86,"d":0.18,"syl":1},{"w":"vereyim:","disp":"vereyim:","t":33.088,"d":0.832,"syl":3},{"w":"ben","disp":"ben","t":33.98,"d":0.18,"syl":1},{"w":"hiçbir","disp":"hiçbir","t":34.24,"d":0.48,"syl":2},{"w":"şey","disp":"şey","t":34.78,"d":0.18,"syl":1},{"w":"hatırlamam.","disp":"hatırlamam.","t":35.02,"d":0.94,"syl":4}],"start":32.4,"dur":3.56,"file":"assets/voice/sc4.wav"},{"text":"Her oturumda sıfırdan uyanırım.","words":[{"w":"Her","disp":"Her","t":36.03,"d":0.21,"syl":1},{"w":"oturumda","disp":"oturumda","t":36.288,"d":0.432,"syl":4},{"w":"sıfırdan","disp":"sıfırdan","t":36.8,"d":0.4,"syl":3},{"w":"uyanırım.","disp":"uyanırım.","t":37.24,"d":0.52,"syl":4}],"start":36.03,"dur":1.73,"file":"assets/voice/sc4.wav"},{"text":"Ama Arda bunun için bir sistem kurdu.","words":[{"w":"Ama","disp":"Ama","t":37.94,"d":0.54,"syl":2},{"w":"Arda","disp":"Arda","t":38.587,"d":0.373,"syl":2},{"w":"bunun","disp":"bunun","t":39.013,"d":0.267,"syl":2},{"w":"için","disp":"için","t":39.344,"d":0.256,"syl":2},{"w":"bir","disp":"bir","t":39.66,"d":0.18,"syl":1},{"w":"sistem","disp":"sistem","t":39.897,"d":0.343,"syl":2},{"w":"kurdu.","disp":"kurdu.","t":40.3,"d":0.42,"syl":2}],"start":37.94,"dur":2.78,"file":"assets/voice/sc4.wav"},{"text":"Her oturumun sonunda not bırakırım: ne yaptık, ne yarım kaldı, neye karar verdik.","words":[{"w":"Her","disp":"Her","t":40.92,"d":0.6,"syl":1},{"w":"oturumun","disp":"oturumun","t":41.568,"d":0.352,"syl":4},{"w":"sonunda","disp":"sonunda","t":41.98,"d":0.42,"syl":3},{"w":"not","disp":"not","t":42.44,"d":0.12,"syl":1},{"w":"bırakırım:","disp":"bırakırım:","t":42.613,"d":0.907,"syl":4},{"w":"ne","disp":"ne","t":43.547,"d":0.053,"syl":1},{"w":"yaptık,","disp":"yaptık,","t":43.669,"d":0.731,"syl":2},{"w":"ne","disp":"ne","t":44.427,"d":0.053,"syl":1},{"w":"yarım","disp":"yarım","t":44.54,"d":0.26,"syl":2},{"w":"kaldı,","disp":"kaldı,","t":44.867,"d":0.653,"syl":2},{"w":"neye","disp":"neye","t":45.573,"d":0.187,"syl":2},{"w":"karar","disp":"karar","t":45.813,"d":0.267,"syl":2},{"w":"verdik.","disp":"verdik.","t":46.144,"d":0.416,"syl":2}],"start":40.92,"dur":5.64,"file":"assets/voice/sc4.wav"},{"text":"Ertesi gün uyandığımda ilk işim onları okumak.","words":[{"w":"Ertesi","disp":"Ertesi","t":46.773,"d":0.667,"syl":3},{"w":"gün","disp":"gün","t":47.48,"d":0.12,"syl":1},{"w":"uyandığımda","disp":"uyandığımda","t":47.653,"d":0.667,"syl":5},{"w":"ilk","disp":"ilk","t":48.4,"d":0.24,"syl":1},{"w":"işim","disp":"işim","t":48.693,"d":0.267,"syl":2},{"w":"onları","disp":"onları","t":49.017,"d":0.343,"syl":3},{"w":"okumak.","disp":"okumak.","t":49.424,"d":0.496,"syl":3}],"start":46.773,"dur":3.147,"file":"assets/voice/sc4.wav"},{"text":"Yani hafızam kafamda değil, bir klasörde.","words":[{"w":"Yani","disp":"Yani","t":50.048,"d":0.512,"syl":2},{"w":"hafızam","disp":"hafızam","t":50.64,"d":0.48,"syl":3},{"w":"kafamda","disp":"kafamda","t":51.18,"d":0.42,"syl":3},{"w":"değil,","disp":"değil,","t":51.653,"d":0.347,"syl":2},{"w":"bir","disp":"bir","t":52.1,"d":0.3,"syl":1},{"w":"klasörde.","disp":"klasörde.","t":52.48,"d":0.72,"syl":3}],"start":50.048,"dur":3.152,"file":"assets/voice/sc4.wav"}],"end":54},{"n":5,"title":"Hata","lines":["Hata da yaparım.","Dakay'ın gözlüğünü ilk çizdiğimde çenesine indirmiştim. Arda, alnına, dedi.","Artık bu, kurallar dosyasında yazıyor. Her düzeltme bir kural olur. Aynı hatayı iki kez yapmamak için."],"start":54,"items":[{"text":"Hata da yaparım.","words":[{"w":"Hata","disp":"Hata","t":54.4,"d":0.32,"syl":2},{"w":"da","disp":"da","t":54.747,"d":0.053,"syl":1},{"w":"yaparım.","disp":"yaparım.","t":54.853,"d":0.867,"syl":3}],"start":54.4,"dur":1.32,"file":"assets/voice/sc5.wav"},{"text":"Dakay'ın gözlüğünü ilk çizdiğimde çenesine indirmiştim. Arda, alnına, dedi.","words":[{"w":"Dakay'ın","disp":"Dakay'ın","t":55.83,"d":0.49,"syl":3},{"w":"gözlüğünü","disp":"gözlüğünü","t":56.4,"d":0.48,"syl":4},{"w":"ilk","disp":"ilk","t":56.96,"d":0.24,"syl":1},{"w":"çizdiğimde","disp":"çizdiğimde","t":57.26,"d":0.58,"syl":4},{"w":"çenesine","disp":"çenesine","t":57.92,"d":0.48,"syl":4},{"w":"indirmiştim.","disp":"indirmiştim.","t":58.44,"d":0.6,"syl":4},{"w":"Arda,","disp":"Arda,","t":59.2,"d":0.68,"syl":2},{"w":"alnına,","disp":"alnına,","t":59.947,"d":0.533,"syl":3},{"w":"dedi.","disp":"dedi.","t":60.512,"d":0.208,"syl":2}],"start":55.83,"dur":4.89,"file":"assets/voice/sc5.wav"},{"text":"Artık bu, kurallar dosyasında yazıyor. Her düzeltme bir kural olur. Aynı hatayı iki kez yapmamak için.","words":[{"w":"Artık","disp":"Artık","t":60.88,"d":0.56,"syl":2},{"w":"bu,","disp":"bu,","t":61.52,"d":0.161,"syl":1},{"w":"kurallar","disp":"kurallar","t":61.78,"d":0.54,"syl":3},{"w":"dosyasında","disp":"dosyasında","t":62.38,"d":0.58,"syl":4},{"w":"yazıyor.","disp":"yazıyor.","t":63,"d":0.52,"syl":3},{"w":"Her","disp":"Her","t":63.66,"d":0.42,"syl":1},{"w":"düzeltme","disp":"düzeltme","t":64.12,"d":0.44,"syl":3},{"w":"bir","disp":"bir","t":64.6,"d":0.12,"syl":1},{"w":"kural","disp":"kural","t":64.787,"d":0.333,"syl":2},{"w":"olur.","disp":"olur.","t":65.184,"d":0.536,"syl":2},{"w":"Aynı","disp":"Aynı","t":65.776,"d":0.224,"syl":2},{"w":"hatayı","disp":"hatayı","t":66.06,"d":0.42,"syl":3},{"w":"iki","disp":"iki","t":66.54,"d":0.18,"syl":2},{"w":"kez","disp":"kez","t":66.8,"d":0.24,"syl":1},{"w":"yapmamak","disp":"yapmamak","t":67.08,"d":0.44,"syl":3},{"w":"için.","disp":"için.","t":67.6,"d":0.4,"syl":2}],"start":60.88,"dur":7.12,"file":"assets/voice/sc5.wav"}],"end":68.9},{"n":6,"title":"Roller","lines":["Burada kararları ben vermem. Teknoloji, mimari, kapsam: hepsi Arda'nın.","Ben önerir, uygular, işi parçalara bölerim.","Ve katılmıyorsam, söylerim. Sadece başını sallayan bir ortak, işe yaramaz."],"start":68.9,"items":[{"text":"Burada kararları ben vermem. Teknoloji, mimari, kapsam: hepsi Arda'nın.","words":[{"w":"Burada","disp":"Burada","t":69.3,"d":0.32,"syl":3},{"w":"kararları","disp":"kararları","t":69.7,"d":0.56,"syl":4},{"w":"ben","disp":"ben","t":70.32,"d":0.18,"syl":1},{"w":"vermem.","disp":"vermem.","t":70.56,"d":0.5,"syl":2},{"w":"Teknoloji,","disp":"Teknoloji,","t":71.2,"d":1.06,"syl":4},{"w":"mimari,","disp":"mimari,","t":72.4,"d":0.82,"syl":3},{"w":"kapsam:","disp":"kapsam:","t":73.323,"d":0.697,"syl":2},{"w":"hepsi","disp":"hepsi","t":74.167,"d":0.733,"syl":2},{"w":"Arda'nın.","disp":"Arda'nın.","t":75.007,"d":1.093,"syl":3}],"start":69.3,"dur":6.8,"file":"assets/voice/sc6.wav"},{"text":"Ben önerir, uygular, işi parçalara bölerim.","words":[{"w":"Ben","disp":"Ben","t":76.22,"d":0.36,"syl":1},{"w":"önerir,","disp":"önerir,","t":76.676,"d":0.624,"syl":3},{"w":"uygular,","disp":"uygular,","t":77.4,"d":0.9,"syl":3},{"w":"işi","disp":"işi","t":78.37,"d":0.21,"syl":2},{"w":"parçalara","disp":"parçalara","t":78.644,"d":0.576,"syl":4},{"w":"bölerim.","disp":"bölerim.","t":79.247,"d":0.453,"syl":3}],"start":76.22,"dur":3.48,"file":"assets/voice/sc6.wav"},{"text":"Ve katılmıyorsam, söylerim. Sadece başını sallayan bir ortak, işe yaramaz.","words":[{"w":"Ve","disp":"Ve","t":79.887,"d":0.373,"syl":1},{"w":"katılmıyorsam,","disp":"katılmıyorsam,","t":80.324,"d":0.896,"syl":5},{"w":"söylerim.","disp":"söylerim.","t":81.32,"d":1.18,"syl":3},{"w":"Sadece","disp":"Sadece","t":82.58,"d":0.48,"syl":3},{"w":"başını","disp":"başını","t":83.1,"d":0.28,"syl":3},{"w":"sallayan","disp":"sallayan","t":83.46,"d":0.4,"syl":3},{"w":"bir","disp":"bir","t":83.9,"d":0.12,"syl":1},{"w":"ortak,","disp":"ortak,","t":84.087,"d":0.573,"syl":2},{"w":"işe","disp":"işe","t":84.72,"d":0.18,"syl":2},{"w":"yaramaz.","disp":"yaramaz.","t":84.96,"d":0.58,"syl":3}],"start":79.887,"dur":5.653,"file":"assets/voice/sc6.wav"}],"end":86.44},{"n":7,"title":"Birlikte","lines":["Birlikte tek günde bir portföy sitesi çıkardık.","Bir maskot çizdik, ona laf atmayı öğrettik.","Ve her gece saat on birde, kendi notlarımı denetleyen bir sistem kurduk."],"start":86.44,"items":[{"text":"Birlikte tek günde bir portföy sitesi çıkardık.","words":[{"w":"Birlikte","disp":"Birlikte","t":86.84,"d":0.4,"syl":3},{"w":"tek","disp":"tek","t":87.3,"d":0.18,"syl":1},{"w":"günde","disp":"günde","t":87.52,"d":0.28,"syl":2},{"w":"bir","disp":"bir","t":87.84,"d":0.12,"syl":1},{"w":"portföy","disp":"portföy","t":88.024,"d":0.416,"syl":2},{"w":"sitesi","disp":"sitesi","t":88.497,"d":0.343,"syl":3},{"w":"çıkardık.","disp":"çıkardık.","t":88.9,"d":0.74,"syl":3}],"start":86.84,"dur":2.8,"file":"assets/voice/sc7.wav"},{"text":"Bir maskot çizdik, ona laf atmayı öğrettik.","words":[{"w":"Bir","disp":"Bir","t":89.7,"d":0.18,"syl":1},{"w":"maskot","disp":"maskot","t":89.944,"d":0.416,"syl":2},{"w":"çizdik,","disp":"çizdik,","t":90.42,"d":0.42,"syl":2},{"w":"ona","disp":"ona","t":90.96,"d":0.36,"syl":2},{"w":"laf","disp":"laf","t":91.373,"d":0.187,"syl":1},{"w":"atmayı","disp":"atmayı","t":91.613,"d":0.347,"syl":3},{"w":"öğrettik.","disp":"öğrettik.","t":92.013,"d":0.587,"syl":3}],"start":89.7,"dur":2.9,"file":"assets/voice/sc7.wav"},{"text":"Ve her gece saat on birde, kendi notlarımı denetleyen bir sistem kurduk.","words":[{"w":"Ve","disp":"Ve","t":92.733,"d":0.267,"syl":1},{"w":"her","disp":"her","t":93.06,"d":0.18,"syl":1},{"w":"gece","disp":"gece","t":93.304,"d":0.256,"syl":2},{"w":"saat","disp":"saat","t":93.64,"d":0.32,"syl":2},{"w":"on","disp":"on","t":93.987,"d":0.053,"syl":1},{"w":"birde,","disp":"birde,","t":94.08,"d":0.44,"syl":2},{"w":"kendi","disp":"kendi","t":94.6,"d":0.4,"syl":2},{"w":"notlarımı","disp":"notlarımı","t":95.06,"d":0.42,"syl":4},{"w":"denetleyen","disp":"denetleyen","t":95.54,"d":0.5,"syl":4},{"w":"bir","disp":"bir","t":96.08,"d":0.12,"syl":1},{"w":"sistem","disp":"sistem","t":96.257,"d":0.343,"syl":2},{"w":"kurduk.","disp":"kurduk.","t":96.64,"d":0.44,"syl":2}],"start":92.733,"dur":4.347,"file":"assets/voice/sc7.wav"}],"end":97.98},{"n":8,"title":"Söylemek istediğim","lines":["Bir şey söylemek istiyorum.","Arda, hedefin backend. Ve şu an kodunun çoğu, benim elimden çıkmış gibi duruyor.","Ben kodunun bana değil, sana benzemesini istiyorum.","Bu yüzden, neden kısmını hiç atlamıyorum."],"start":97.98,"items":[{"text":"Bir şey söylemek istiyorum.","words":[{"w":"Bir","disp":"Bir","t":99.64,"d":0.012,"syl":1},{"w":"şey","disp":"şey","t":99.712,"d":0.18,"syl":1},{"w":"söylemek","disp":"söylemek","t":99.945,"d":0.427,"syl":3},{"w":"istiyorum.","disp":"istiyorum.","t":100.42,"d":0.432,"syl":4}],"start":99.64,"dur":1.212,"file":"assets/voice/sc8.wav"},{"text":"Arda, hedefin backend. Ve şu an kodunun çoğu, benim elimden çıkmış gibi duruyor.","words":[{"w":"Arda,","disp":"Arda,","t":101.279,"d":1.413,"syl":2},{"w":"hedefin","disp":"hedefin","t":102.745,"d":0.427,"syl":3},{"w":"bekend.","disp":"backend.","t":103.232,"d":0.58,"syl":2},{"w":"Ve","disp":"Ve","t":104.159,"d":0.693,"syl":1},{"w":"şu","disp":"şu","t":104.932,"d":0.16,"syl":1},{"w":"an","disp":"an","t":105.145,"d":0.107,"syl":1},{"w":"kodunun","disp":"kodunun","t":105.312,"d":0.42,"syl":3},{"w":"çoğu,","disp":"çoğu,","t":105.812,"d":0.6,"syl":2},{"w":"benim","disp":"benim","t":106.459,"d":0.233,"syl":2},{"w":"elimden","disp":"elimden","t":106.724,"d":0.368,"syl":3},{"w":"çıkmış","disp":"çıkmış","t":107.145,"d":0.347,"syl":2},{"w":"gibi","disp":"gibi","t":107.54,"d":0.192,"syl":2},{"w":"duruyor.","disp":"duruyor.","t":107.792,"d":0.5,"syl":3}],"start":101.279,"dur":7.013,"file":"assets/voice/sc8.wav"},{"text":"Ben kodunun bana değil, sana benzemesini istiyorum.","words":[{"w":"Ben","disp":"Ben","t":109.062,"d":0.03,"syl":1},{"w":"kodunun","disp":"kodunun","t":109.152,"d":0.42,"syl":3},{"w":"bana","disp":"bana","t":109.62,"d":0.192,"syl":2},{"w":"değil,","disp":"değil,","t":109.865,"d":0.507,"syl":2},{"w":"sana","disp":"sana","t":110.42,"d":0.192,"syl":2},{"w":"benzemesini","disp":"benzemesini","t":110.66,"d":0.592,"syl":5},{"w":"istiyorum.","disp":"istiyorum.","t":111.3,"d":0.512,"syl":4}],"start":109.062,"dur":2.75,"file":"assets/voice/sc8.wav"},{"text":"Bu yüzden, neden kısmını hiç atlamıyorum.","words":[{"w":"Bu","disp":"Bu","t":111.945,"d":0.267,"syl":1},{"w":"yüzden,","disp":"yüzden,","t":112.269,"d":0.344,"syl":2},{"w":"neden","disp":"neden","t":112.719,"d":0.533,"syl":2},{"w":"kısmını","disp":"kısmını","t":113.316,"d":0.416,"syl":3},{"w":"hiç","disp":"hiç","t":113.832,"d":0.3,"syl":1},{"w":"atlamıyorum.","disp":"atlamıyorum.","t":114.185,"d":0.667,"syl":5}],"start":111.945,"dur":2.907,"file":"assets/voice/sc8.wav"}],"end":116.052},{"n":9,"title":"Kapanış","lines":["Ben bir araç değil, bir ortak olmaya çalışıyorum.","Hatırlamam, ama unutmam da. Çünkü yazarım.","Görüşürüz, Arda."],"start":116.052,"items":[{"text":"Ben bir araç değil, bir ortak olmaya çalışıyorum.","words":[{"w":"Ben","disp":"Ben","t":116.552,"d":0.16,"syl":1},{"w":"bir","disp":"bir","t":116.772,"d":0.18,"syl":1},{"w":"araç","disp":"araç","t":117.016,"d":0.256,"syl":2},{"w":"değil,","disp":"değil,","t":117.325,"d":0.467,"syl":2},{"w":"bir","disp":"bir","t":117.842,"d":0.15,"syl":1},{"w":"ortak","disp":"ortak","t":118.072,"d":0.4,"syl":2},{"w":"olmaya","disp":"olmaya","t":118.512,"d":0.28,"syl":3},{"w":"çalışıyorum.","disp":"çalışıyorum.","t":118.845,"d":0.667,"syl":5}],"start":116.552,"dur":2.96,"file":"assets/voice/sc9.wav"},{"text":"Hatırlamam, ama unutmam da. Çünkü yazarım.","words":[{"w":"Hatırlamam,","disp":"Hatırlamam,","t":119.652,"d":0.9,"syl":4},{"w":"ama","disp":"ama","t":120.672,"d":0.36,"syl":2},{"w":"unutmam","disp":"unutmam","t":121.112,"d":0.56,"syl":3},{"w":"da.","disp":"da.","t":121.725,"d":0.427,"syl":1},{"w":"Çünkü","disp":"Çünkü","t":122.205,"d":0.267,"syl":2},{"w":"yazarım.","disp":"yazarım.","t":122.539,"d":1.053,"syl":3}],"start":119.652,"dur":3.94,"file":"assets/voice/sc9.wav"},{"text":"Görüşürüz, Arda.","words":[{"w":"Görüşürüz,","disp":"Görüşürüz,","t":124.282,"d":0.43,"syl":4},{"w":"Arda.","disp":"Arda.","t":124.739,"d":0.293,"syl":2}],"start":124.282,"dur":0.75,"file":"assets/voice/sc9.wav"}],"end":130.032}]};</script>
+    <script>/* src/data.js */
+// Dakay verisi: ifadeler ve kol pozları. Model sheet + sahne.html rig'inden; yeniler işaretli.
+(function (g) {
+  const EX = {
+    def:  {bL:[78,62,92,57,102,63], bR:[142,62,128,57,118,63], bw:2.6, fur:1, m:[98,107,110,105.5,122,107], mo:0, dim:0, chin:1, gy:0, gr:0},
+    meh:  {bL:[78,61,90,60.5,102,61], bR:[142,61,130,60.5,118,61], bw:2.6, fur:.5, m:[99,107,110,107,121,107], mo:0, dim:0, chin:1, gy:0, gr:0},
+    sus:  {bL:[78,62,92,57,102,63], bR:[143,54,131,47,118,56], bw:2.6, fur:0, m:[99,108.5,110,107.5,121,105], mo:0, dim:0, chin:1, gy:0, gr:0},
+    smirk:{bL:[78,61,91,58,102,61], bR:[142,61,129,58,118,61], bw:2.6, fur:0, m:[99,107,113,108.5,122,102.5], mo:0, dim:1, chin:1, gy:0, gr:0},
+    angry:{bL:[75,54,89,59.5,103,65], bR:[145,54,131,59.5,117,65], bw:3.6, fur:2, m:[99,110,110,103.5,121,110], mo:0, dim:0, chin:0, gy:1.5, gr:0},
+    shock:{bL:[79,52,90,45,101,51], bR:[141,52,130,45,119,51], bw:2.6, fur:0, m:[104,109,110,109,116,109], mo:1, dim:0, chin:0, gy:-3, gr:-6},
+    sad:  {bL:[78,63,91,61.5,102,56], bR:[142,63,129,61.5,118,56], bw:2.6, fur:1, m:[100,109,110,106,120,109], mo:0, dim:0, chin:1, gy:.5, gr:0},
+    // yeni (2026-10-08, video): yumuşak — kaşlar gevşek, iç uçlar hafif kalkık, ağızda belli belirsiz gülümseme
+    soft: {bL:[78,61,91,58.5,102,59], bR:[142,61,129,58.5,118,59], bw:2.4, fur:0, m:[99,107,110,108.4,121,106.4], mo:0, dim:0, chin:1, gy:0, gr:0}
+  };
+  // kol: omuz, kontrol 1, kontrol 2, bilek, el açısı
+  const P = {
+    sideL:  [50,128, 36,150, 30,176, 34,198, 12],
+    sideR:  [170,128, 184,150, 190,176, 186,198, -12],
+    hipL:   [50,128, 20,140, 16,168, 44,180, -90],
+    hipR:   [170,128, 200,140, 204,168, 176,180, 90],
+    waveR:  [170,126, 198,116, 208,92, 204,66, 172],
+    waveR2: [170,126, 198,116, 214,94, 220,70, 200],
+    pointL: [50,126, 30,116, 16,102, 8,86, 135],
+    peekLo: [170,126, 178,150, 150,146, 130,116, 180],
+    peekHi: [170,126, 184,130, 150,112, 130,90, 180],
+    // yeniler
+    pointR:   [170,126, 190,116, 204,102, 212,86, -135],
+    templeR:  [170,126, 204,118, 196,80, 158,74, 150],
+    shrugL:   [50,128, 26,134, 14,118, 20,102, 165],
+    shrugR:   [170,128, 194,134, 206,118, 200,102, -165],
+    presentR: [170,128, 198,134, 216,140, 232,140, -100],
+    chinR:    [170,126, 186,150, 160,150, 132,150, 170]
+  };
+  g.DK_DATA = { EX, P };
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+    <script>/* src/engine.js */
+// Motor: her kare yalnızca zamanın fonksiyonu. HyperFrames timeline'ı seek edince
+// driver setter'ı render(t)'yi çağırır; hiçbir yerde performance.now / random yok.
+(function () {
+  const { EX, P } = window.DK_DATA;
+  const TL = window.TIMELINE;
+  const f = n => Math.round(n * 100) / 100;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const EASE = {
+    linear: t => t,
+    inOut: t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2,
+    out: t => 1 - Math.pow(1 - t, 3),
+    in: t => t * t * t,
+    back: t => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); },
+    bigback: t => { const c1 = 3.2, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); },
+    elastic: t => t === 0 || t === 1 ? t : Math.pow(2, -10 * t) * Math.sin((t * 10 - .75) * (2 * Math.PI / 3)) + 1
+  };
+
+  // ---------- izler (tracks) ----------
+  const TR = {};       // "obj.prop" -> [{t0,t1,to,ease,from}]
+  const BASE = {};     // "obj.prop" -> varsayılan değer
+  let seq = 0;
+  function K(obj, t0, props, dur = .3, ease = 'inOut') {
+    for (const k in props) {
+      const key = obj + '.' + k;
+      (TR[key] = TR[key] || []).push({ t0, t1: t0 + Math.max(0, dur), to: props[k], ease: EASE[ease] || EASE.inOut, n: seq++ });
+    }
+  }
+  function valueAt(key, t, upto) {
+    const segs = TR[key];
+    let v = BASE[key];
+    if (!segs) return v;
+    let s = null;
+    const lim = upto === undefined ? segs.length : upto;
+    for (let i = 0; i < lim; i++) { if (segs[i].t0 <= t) s = segs[i]; else break; }
+    if (!s) return v;
+    if (t >= s.t1) return s.to;
+    const p = s.ease((t - s.t0) / (s.t1 - s.t0));
+    if (Array.isArray(s.to)) return s.to.map((b, i) => lerp(s.from[i], b, p));
+    return lerp(s.from, s.to, p);
+  }
+  function finalize() {
+    for (const key in TR) {
+      const segs = TR[key].sort((a, b) => a.t0 - b.t0 || a.n - b.n);
+      segs.forEach((s, i) => {
+        let fr = valueAt(key, s.t0, i);
+        if (fr === undefined) fr = Array.isArray(s.to) ? s.to.slice() : (typeof s.to === 'number' ? 0 : s.to);
+        s.from = Array.isArray(fr) ? fr.slice() : fr;
+      });
+    }
+  }
+  function def(obj, defaults) {
+    for (const k in defaults) BASE[obj + '.' + k] = Array.isArray(defaults[k]) ? defaults[k].slice() : defaults[k];
+  }
+  const keysOf = obj => Object.keys(TR).filter(k => k.startsWith(obj + '.')).map(k => k.slice(obj.length + 1));
+  function state(obj, defaults, t) {
+    const out = {};
+    for (const k in defaults) {
+      const key = obj + '.' + k;
+      if (!(key in BASE)) BASE[key] = defaults[k];
+      out[k] = valueAt(key, t);
+    }
+    return out;
+  }
+
+  // ---------- Dakay rig ----------
+  const LN_L=[63,68,107,68,105,88,104,95,99,98,93,98,75,98,68,98,65,94,64,88], LF_L=[64,51,107,51,105.5,61,105,65,101,67,96,67,75,67,69,67,66,65,65.5,61];
+  const LN_R=[157,68,113,68,115,88,116,95,121,98,127,98,145,98,152,98,155,94,156,88], LF_R=[156,51,113,51,114.5,61,115,65,119,67,124,67,145,67,151,67,154,65,154.5,61];
+  const BR_N=[105,69,115,69,115,76,105,76], BR_F=[105,52,115,52,115,56,105,56];
+  const GL_N=[70,77,71,73.5,78,73.5,120,77,121,73.5,128,73.5], GL_F=[71,57.5,72,55,78,55,121,57.5,122,55,128,55];
+  const mix = (A, B, t) => A.map((a, k) => lerp(a, B[k], t));
+  const lensD = a => `M${f(a[0])},${f(a[1])} L${f(a[2])},${f(a[3])} L${f(a[4])},${f(a[5])} C${f(a[6])},${f(a[7])} ${f(a[8])},${f(a[9])} ${f(a[10])},${f(a[11])} L${f(a[12])},${f(a[13])} C${f(a[14])},${f(a[15])} ${f(a[16])},${f(a[17])} ${f(a[18])},${f(a[19])} Z`;
+  const bridgeD = a => `M${f(a[0])},${f(a[1])} L${f(a[2])},${f(a[3])} L${f(a[4])},${f(a[5])} L${f(a[6])},${f(a[7])} Z`;
+  const glintD = a => `M${f(a[0])},${f(a[1])} Q${f(a[2])},${f(a[3])} ${f(a[4])},${f(a[5])} M${f(a[6])},${f(a[7])} Q${f(a[8])},${f(a[9])} ${f(a[10])},${f(a[11])}`;
+  const qD = a => `M${f(a[0])},${f(a[1])} Q${f(a[2])},${f(a[3])} ${f(a[4])},${f(a[5])}`;
+  const armD = a => `M${f(a[0])},${f(a[1])} C${f(a[2])},${f(a[3])} ${f(a[4])},${f(a[5])} ${f(a[6])},${f(a[7])}`;
+  const handT = (a, flip) => `translate(${f(a[6])} ${f(a[7])}) rotate(${f(a[8])}) scale(${flip} 1)`;
+  const HAND = 'M-5,-4 C-7,4 -7,13 -3,17 C0,20 4,18 5,14 L5,10 C7,12 10,12 10,9 C10,5 7,2 5,-2 Z';
+  const LEG = 'M0,0 L0,41 L-2,46 C-3,49 -2,51 1,51 L10,51 C18,51 22,50 21,47 C20,43 16,41 9,41 L9,0 Z';
+  const BODY = 'M110,40 C150,40 172,110 178,160 C184,205 160,232 110,232 C60,232 36,205 42,160 C48,110 70,40 110,40 Z';
+
+  const RIG_DEFAULTS = Object.assign({}, JSON.parse(JSON.stringify(EX.def)), {
+    rx: 0, ry: 0, rr: 0, sq: 1, look: 0, lookX: 0, gu: 0, gc: 0, eo: 0, lid: 83, pupil: 1.2,
+    aL: P.sideL.slice(), aR: P.sideR.slice(), swing: 0, br: 1, shake: 0, tap: 0, lips: 1, nod: 0, nay: 0,
+    px: 960, py: 905, sc: 1, o: 0, glare: 0
+  });
+
+  function rigMarkup(pre) {
+    return `<svg class="rig-svg" viewBox="-40 0 300 320" width="600" height="640" overflow="visible">
+  <defs>
+    <radialGradient id="${pre}gB" cx="0.42" cy="0.26" r="0.82"><stop offset="0" stop-color="#62656E"/><stop offset=".5" stop-color="#4C4F56"/><stop offset="1" stop-color="#3B3E45"/></radialGradient>
+    <clipPath id="${pre}cE"><circle cx="89" cy="84" r="12.5"/><circle cx="131" cy="84" r="12.5"/></clipPath>
+  </defs>
+  <g data-r="rig">
+    <ellipse data-r="shadow" cx="110" cy="279" rx="56" ry="7" fill="#000" opacity=".2"/>
+    <g data-r="legL"><path d="${LEG}" transform="translate(96,226) scale(-1,1)" fill="#474A51" stroke="#0B0B0D" stroke-width="2.4" stroke-linejoin="round"/></g>
+    <g data-r="legR"><path d="${LEG}" transform="translate(124,226)" fill="#474A51" stroke="#0B0B0D" stroke-width="2.4" stroke-linejoin="round"/></g>
+    <g data-r="torso">
+      <path d="${BODY}" fill="url(#${pre}gB)" stroke="#0B0B0D" stroke-width="3.2"/>
+      <path d="M80,68 C85,55 96,48 108,46" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="5" stroke-linecap="round"/>
+      <g data-r="face">
+        <path data-r="browL" fill="none" stroke="#0B0B0D" stroke-width="2.6" stroke-linecap="round"/>
+        <path data-r="browR" fill="none" stroke="#0B0B0D" stroke-width="2.6" stroke-linecap="round"/>
+        <path data-r="fur" d="M108.5,56 L109.5,62 M111.5,56 L110.5,62" fill="none" stroke="#2C2E34" stroke-width="1.2" stroke-linecap="round"/>
+        <g data-r="eyes" opacity="0"></g>
+        <path data-r="mouth" fill="none" stroke="#0B0B0D" stroke-width="2.4" stroke-linecap="round"/>
+        <ellipse data-r="talk" cx="110" cy="108" rx="5" ry="2" fill="#2C2E34" stroke="#0B0B0D" stroke-width="2" opacity="0"/>
+        <ellipse data-r="mouthO" cx="110" cy="109" rx="3.6" ry="4.6" fill="#2C2E34" stroke="#0B0B0D" stroke-width="2" opacity="0"/>
+        <path data-r="dimple" d="M121.5,100.5 Q124.5,102 124,105" fill="none" stroke="#2C2E34" stroke-width="1.3" stroke-linecap="round" opacity="0"/>
+        <path data-r="chin" d="M105,112.5 Q110,114 115,112.5" fill="none" stroke="#2C2E34" stroke-width="1.3" stroke-linecap="round"/>
+        <g data-r="glasses">
+          <ellipse data-r="lsL" cx="85" cy="101" rx="19" ry="3.5" fill="#000" opacity=".16"/>
+          <ellipse data-r="lsR" cx="135" cy="101" rx="19" ry="3.5" fill="#000" opacity=".16"/>
+          <g fill="#070708" stroke="#0B0B0D" stroke-width="2" stroke-linejoin="round"><path data-r="lensL"/><path data-r="lensR"/><path data-r="bridge"/></g>
+          <path data-r="glint" fill="none" stroke="#62656E" stroke-width="2.2" stroke-linecap="round"/>
+          <path data-r="glare" d="M66,72 L80,72 L70,94 L60,94 Z M116,72 L130,72 L120,94 L110,94 Z" fill="#F1ECD6" opacity="0"/>
+        </g>
+      </g>
+      <g data-r="armL"><path fill="none" stroke="#0B0B0D" stroke-width="10.5" stroke-linecap="round"/><path d="${HAND}" fill="#474A51" stroke="#0B0B0D" stroke-width="2.4" stroke-linejoin="round"/><path fill="none" stroke="#474A51" stroke-width="5.8" stroke-linecap="round"/></g>
+      <g data-r="armR"><path fill="none" stroke="#0B0B0D" stroke-width="10.5" stroke-linecap="round"/><path d="${HAND}" fill="#474A51" stroke="#0B0B0D" stroke-width="2.4" stroke-linejoin="round"/><path fill="none" stroke="#474A51" stroke-width="5.8" stroke-linecap="round"/></g>
+    </g>
+    <g data-r="fx"></g>
+  </g>
+</svg>`;
+  }
+
+  function eyeSVG(cx, look, lid) {
+    const Rr = 12.5, EY = 84, dy = EY - lid, hw = Math.sqrt(Math.max(0, Rr * Rr - dy * dy)), a = f(cx - hw), b = f(cx + hw), px = cx + look;
+    const big = lid < EY ? 1 : 0;
+    return `<ellipse cx="${cx}" cy="${EY + 4}" rx="15.5" ry="14" fill="#000" opacity=".16"/>`
+      + `<circle cx="${cx}" cy="${EY}" r="${Rr}" fill="#52555C"/>`
+      + (hw > .3 ? `<path d="M${a},${f(lid)} A${Rr},${Rr} 0 ${big} 0 ${b},${f(lid)} Z" fill="#F3F1EA"/>` : '')
+      + `<circle cx="${f(px)}" cy="${f(lid + 3)}" r="5.4" fill="#070708"/><circle cx="${f(px - 1.8)}" cy="${f(lid + 2)}" r="1.25" fill="#fff"/>`
+      + (hw > .3 ? `<path d="M${a},${f(lid)} A${Rr},${Rr} 0 ${1 - big} 1 ${b},${f(lid)} Z" fill="#52555C"/>` : '')
+      + `<path d="M${f(cx - hw - .6)},${f(lid)} L${f(cx + hw + .6)},${f(lid)}" stroke="#0B0B0D" stroke-width="2.4" stroke-linecap="round"/>`;
+  }
+  function eyesSVG(pre, lid, look) {
+    return `<g clip-path="url(#${pre}cE)">${eyeSVG(89, look, lid)}${eyeSVG(131, -look, lid)}</g>`
+      + `<circle cx="89" cy="84" r="12.5" fill="none" stroke="#0B0B0D" stroke-width="2"/><circle cx="131" cy="84" r="12.5" fill="none" stroke="#0B0B0D" stroke-width="2"/>`
+      + `<path d="M82,99.5 Q89,102 96,99.5 M124,99.5 Q131,102 138,99.5" fill="none" stroke="#2C2E34" stroke-width="1.1" stroke-linecap="round"/>`;
+  }
+
+  // ---------- efektler (rig koordinatında, yaşlarına göre çizilir) ----------
+  const STAR = 'M0,-9 L2,-2 L9,0 L2,2 L0,9 L-2,2 L-9,0 L-2,-2 Z';
+  const popCurve = a => {      // 0..1.7 sn
+    if (a < .3) { const p = a / .3; return { s: EASE.back(p) * 1.05, r: lerp(-14, 0, p), o: Math.min(1, p * 3) }; }
+    if (a < 1.36) return { s: 1, r: 0, o: 1 };
+    const p = (a - 1.36) / .34; return { s: 1, r: 0, o: 1 - p, y: -8 * p };
+  };
+  const FXDRAW = {
+    exclaim: a => [0, 1].map(n => { const c = popCurve(a - n * .1); if (a - n * .1 < 0) return ''; return `<text x="${176 + n * 16}" y="${52 - n * 8}" transform="translate(0 ${f(c.y || 0)}) rotate(${f(c.r)} ${176 + n * 16} 52) " style="transform-box:fill-box;transform-origin:50% 100%;" opacity="${f(c.o)}" class="fxt" font-size="${f(46 * c.s)}">!</text>`; }).join(''),
+    question: a => { const c = popCurve(a); return `<text x="178" y="48" opacity="${f(c.o)}" class="fxt" font-size="${f(46 * c.s)}" transform="translate(0 ${f(c.y || 0)})">?</text>`; },
+    steam: a => [0, 1, 2, 3, 4, 5, 6, 7].map(n => {
+      const d = Math.floor(n / 2) * .24, p = (a - d) / .9; if (p < 0 || p > 1) return '';
+      const sx = n % 2 ? 1 : -1, o = p < .2 ? p / .2 : 1 - (p - .2) / .8, s = lerp(.3, 1.4, EASE.out(p));
+      return `<circle cx="${f((n % 2 ? 140 : 80) + sx * 26 * EASE.out(p))}" cy="${f(50 - 30 * EASE.out(p))}" r="${f((5 + n % 3) * s)}" fill="#fff" stroke="#0B0B0D" stroke-width="2" opacity="${f(o)}"/>`;
+    }).join(''),
+    sweat: a => { const p = a / 1.9; if (p > 1) return ''; const o = p < .2 ? p / .2 : 1 - (p - .2) / .8, y = p < .2 ? -6 + 6 * p / .2 : 36 * EASE.in((p - .2) / .8), s = p < .2 ? lerp(.2, 1, p / .2) : lerp(1, .9, (p - .2) / .8);
+      return `<g transform="translate(170 ${f(64 + y)}) scale(${f(s)})"><path d="M0,-9 C4,-3 6.5,1 6.5,4.5 A6.5,6.5 0 1 1 -6.5,4.5 C-6.5,1 -4,-3 0,-9 Z" fill="#9ED8FF" stroke="#0B0B0D" stroke-width="2" opacity="${f(o)}"/></g>`; },
+    spark: a => [[70, 72, 0], [152, 70, .16]].map(([x, y, d]) => { const p = (a - d) / .95; if (p < 0 || p > 1) return ''; const s = p < .4 ? 1.25 * p / .4 : 1.25 * (1 - (p - .4) / .6), r = 90 * p;
+      return `<g transform="translate(${x} ${y}) rotate(${f(r)}) scale(${f(Math.max(.01, s))})"><path d="${STAR}" fill="#fff" stroke="#0B0B0D" stroke-width="1.2"/></g>`; }).join(''),
+    dots: a => [0, 1, 2].map(n => { const p = (a - n * .35) / 2.6; if (p < 0 || p > 1) return ''; const o = p < .15 ? p / .15 : p > .85 ? (1 - p) / .15 : 1;
+      return `<circle cx="${168 + n * 13}" cy="${40 - n * 7}" r="${3.5 + n * .8}" fill="#F1ECD6" stroke="#0B0B0D" stroke-width="1.8" opacity="${f(o)}"/>`; }).join(''),
+    zzz: (a, life) => [0, 1, 2].map(n => {
+      let p = ((a - n * .9) % 2.7) / 2.7; if (a - n * .9 < 0) return ''; if (a > life - .4) return '';
+      const o = p < .2 ? p / .2 : 1 - (p - .2) / .8, s = lerp(.6, 1.25, p);
+      return `<text x="${f(178 + n * 8 - 22 * p)}" y="${f(56 - n * 6 - 40 * p)}" class="fxt" font-size="${f((16 + n * 4) * s)}" stroke-width="2.4" opacity="${f(o)}">z</text>`;
+    }).join(''),
+    hearts: a => [0, 1, 2].map(n => { const p = (a - n * .25) / 1.6; if (p < 0 || p > 1) return ''; const o = p < .15 ? p / .15 : 1 - (p - .15) / .85, s = lerp(.4, 1.1, EASE.out(p));
+      return `<g transform="translate(${f(160 + n * 18 + Math.sin(p * 9 + n) * 5)} ${f(60 - 60 * p - n * 6)}) scale(${f(s)})"><path d="M0,4 C-8,-3 -8,-10 -3,-10 C-1,-10 0,-8 0,-7 C0,-8 1,-10 3,-10 C8,-10 8,-3 0,4 Z" fill="#F0602B" stroke="#0B0B0D" stroke-width="1.6" opacity="${f(o)}"/></g>`; }).join('')
+  };
+  const FXLIFE = { exclaim: 1.8, question: 1.7, steam: 1.7, sweat: 1.9, spark: 1.2, dots: 3.4, zzz: 0, hearts: 2.2 };
+  const FXS = [];      // {rig, kind, t0, life}
+  function fx(rig, kind, t0, life) { FXS.push({ rig, kind, t0, life: life || FXLIFE[kind] || 2 }); }
+
+  class Rig {
+    constructor(host, name) {
+      this.name = name; this.pre = 'r' + name + '_';
+      host.innerHTML = rigMarkup(this.pre);
+      this.svg = host.querySelector('svg'); this.host = host;
+      this.E = {}; host.querySelectorAll('[data-r]').forEach(n => this.E[n.getAttribute('data-r')] = n);
+      this.E.aL = [...this.E.armL.children]; this.E.aR = [...this.E.armR.children];
+      this.eyeKey = ''; this.fxKey = '';
+    }
+    draw(S, t, talk) {
+      const E = this.E;
+      const br = Math.sin(t * 2.1) * .009 * S.br;
+      const sy = S.sq + br, sx = 1 + (1 - S.sq) * .7 - br * .4;
+      const shx = S.shake ? (Math.sin(t * 90) + Math.sin(t * 137) * .6) * S.shake : 0;
+      E.rig.setAttribute('transform', `translate(${f(S.rx + shx)} ${f(S.ry)}) rotate(${f(S.rr)} 110 277)`);
+      E.torso.setAttribute('transform', `translate(110 232) scale(${sx.toFixed(4)} ${sy.toFixed(4)}) translate(-110 -232)`);
+      const fx_ = S.lookX + Math.sin(t * 15) * 5 * S.nay, fy = S.look + Math.max(0, Math.sin(t * 13)) * 3 * S.nod;
+      E.face.setAttribute('transform', `translate(${f(fx_)} ${f(fy)})`);
+      E.browL.setAttribute('d', qD(S.bL)); E.browR.setAttribute('d', qD(S.bR));
+      E.browL.setAttribute('stroke-width', f(S.bw)); E.browR.setAttribute('stroke-width', f(S.bw));
+      E.fur.setAttribute('opacity', f(clamp(S.fur, 0, 1) * (1 - S.gu)));
+      E.fur.setAttribute('stroke-width', f(1.2 + Math.max(0, S.fur - 1) * .4));
+      const u = S.gu;
+      E.glasses.setAttribute('transform', `translate(0 ${f(S.gy + 38 * S.gc)}) rotate(${f(S.gr)} 110 83)`);
+      E.lensL.setAttribute('d', lensD(mix(LN_L, LF_L, u))); E.lensR.setAttribute('d', lensD(mix(LN_R, LF_R, u)));
+      E.bridge.setAttribute('d', bridgeD(mix(BR_N, BR_F, u))); E.glint.setAttribute('d', glintD(mix(GL_N, GL_F, u)));
+      for (const s of [E.lsL, E.lsR]) { s.setAttribute('cy', f(lerp(101, 68.5, u))); s.setAttribute('rx', f(lerp(19, 17, u))); s.setAttribute('ry', f(lerp(3.5, 2, u))); }
+      E.glare.setAttribute('opacity', f(S.glare * (1 - u)));
+      E.eyes.setAttribute('opacity', f(S.eo));
+      const k = S.lid.toFixed(1) + '/' + S.pupil.toFixed(1);
+      if (S.eo > .01 && k !== this.eyeKey) { this.eyeKey = k; E.eyes.innerHTML = eyesSVG(this.pre, S.lid, S.pupil); }
+      const tk = clamp(talk * S.lips, 0, 1);
+      const mc = [(S.m[0] + S.m[4]) / 2, (S.m[1] + S.m[3] + S.m[5]) / 3];
+      E.mouth.setAttribute('d', qD(S.m)); E.mouth.setAttribute('opacity', f((1 - S.mo) * (1 - clamp(tk * 2.2, 0, 1))));
+      E.talk.setAttribute('opacity', tk > .04 ? 1 : 0);
+      E.talk.setAttribute('cx', f(mc[0])); E.talk.setAttribute('cy', f(mc[1] + 1 + 1.6 * tk));
+      E.talk.setAttribute('rx', f(4.6 + 2.2 * tk)); E.talk.setAttribute('ry', f(.8 + 4 * tk));
+      E.mouthO.setAttribute('opacity', S.mo > .02 ? 1 : 0);
+      E.mouthO.setAttribute('transform', `translate(110 109) scale(${f(Math.max(.01, S.mo))}) translate(-110 -109)`);
+      E.dimple.setAttribute('opacity', f(S.dim)); E.chin.setAttribute('opacity', f(S.chin * (1 - S.gc)));
+      const [lo, lh, lf] = E.aL, [ro, rh, rf] = E.aR;
+      const dl = armD(S.aL), dr = armD(S.aR);
+      lo.setAttribute('d', dl); lf.setAttribute('d', dl); lh.setAttribute('transform', handT(S.aL, 1));
+      ro.setAttribute('d', dr); rf.setAttribute('d', dr); rh.setAttribute('transform', handT(S.aR, -1));
+      E.legL.setAttribute('transform', `rotate(${f(Math.sin(t * 2.3) * 5 * S.swing)} 96 226)`);
+      const tap = S.tap ? Math.max(0, Math.sin(t * 9)) * 9 * S.tap : 0;
+      E.legR.setAttribute('transform', `rotate(${f(Math.sin(t * 2.3 + 2.6) * 5 * S.swing - tap)} 124 276)`);
+      E.shadow.setAttribute('opacity', f(clamp(.2 * (1 + S.ry / 60), 0, .2)));
+      E.shadow.setAttribute('rx', f(56 * clamp(1 + S.ry / 200, .5, 1)));
+      // efektler
+      let html = '';
+      for (const e of FXS) {
+        if (e.rig !== this.name) continue;
+        const a = t - e.t0;
+        if (a < 0 || (e.life && a > e.life)) continue;
+        html += FXDRAW[e.kind](a, e.life || 1e9);
+      }
+      if (html !== this.fxKey) { this.fxKey = html; E.fx.innerHTML = html; }
+    }
+  }
+
+  // ---------- konuşma / ağız ----------
+  const LINES = [];
+  TL.scenes.forEach(sc => sc.items.forEach((it, i) => LINES.push(Object.assign({ scene: sc.n, idx: i }, it))));
+  const VOW = /[aeıioöuüâî]/gi;
+  LINES.forEach(l => l.words.forEach(w => { w.syl = Math.max(1, (w.w.match(VOW) || []).length); }));
+  function talkAt(t) {
+    for (const l of LINES) {
+      if (t < l.start || t > l.start + l.dur) continue;
+      for (const w of l.words) {
+        if (t >= w.t && t < w.t + w.d) {
+          const p = (t - w.t) / w.d;
+          return Math.pow(Math.abs(Math.sin(Math.PI * p * w.syl)), .7) * (.75 + .25 * Math.sin(w.t * 7.3));
+        }
+      }
+    }
+    return 0;
+  }
+
+  // ---------- zaman yardımcıları ----------
+  const scene = n => TL.scenes.find(s => s.n === n);
+  const L = (s, i) => scene(s).items[i].start;
+  const LE = (s, i) => { const it = scene(s).items[i]; return it.start + it.dur; };
+  const Wd = (s, i, needle, nth = 0) => {
+    const ws = scene(s).items[i].words, nd = needle.toLocaleLowerCase('tr');
+    const hits = ws.filter(w => (w.disp || w.w).toLocaleLowerCase('tr').includes(nd));
+    if (!hits.length) { console.warn('kelime yok', s, i, needle); return L(s, i); }
+    return hits[Math.min(nth, hits.length - 1)].t;
+  };
+  const S0 = s => scene(s).start, S1 = s => scene(s).end;
+
+  window.DK_ENGINE = { TR, K, fx, finalize, state, def, keysOf, valueAt, Rig, RIG_DEFAULTS, EASE, talkAt, LINES, L, LE, Wd, S0, S1, f, lerp, clamp, EX, P };
+})();
+</script>
+    <script>/* src/scene.js */
+// Koreografi. Bütün zamanlar sesten (timeline.json) türetilir: L(sahne, satır) satırın
+// başlangıcı, Wd(sahne, satır, "kelime") o kelimenin söylendiği an. Ses yeniden üretilirse
+// her şey kendiliğinden kayar. sfx() çağrıları build.mjs'te tek bir efekt izine karılır.
+window.CHOREO = function (E, sfx) {
+  const { K, fx: fxRaw, L, LE, Wd, S0, S1, EX, P } = E;
+
+  // ---- yardımcılar ----
+  const dk = (t, props, dur = .3, ease = 'inOut') => K('dk', t, props, dur, ease);
+  const ex = (name, extra) => { const e = JSON.parse(JSON.stringify(EX[name])); return Object.assign(e, extra || {}); };
+  const A = (id, t, props, dur = .4, ease = 'inOut') => K('e:' + id, t, props, dur, ease);
+  const fx = (kind, t, life) => fxRaw('dk', kind, t, life);
+  const show = (id, t, from = { y: 40 }, dur = .5, ease = 'back') => {
+    A(id, t, Object.assign({ o: 0 }, from), 0);
+    const to = { o: 1 }; for (const k in from) to[k] = k === 's' ? 1 : 0;
+    A(id, t, to, dur, ease);
+  };
+  const hide = (id, t, to = { y: -30 }, dur = .32, ease = 'in') => A(id, t, Object.assign({ o: 0 }, to), dur, ease);
+  const pop = (id, t, s = .3, snd = 'pop') => { show(id, t, { s }, .5, 'bigback'); if (snd) sfx(snd, t, .55); };
+  const stamp = (id, t, from = { s: 2.2 }) => { show(id, t, from, .32, 'out'); sfx('stamp', t + .2, .7); };
+  const type = (id, t, dur, chars, vol = .28) => {
+    A(id, t, { type: 0 }, 0); A(id, t, { type: 1 }, dur, 'linear');
+    const n = Math.max(1, Math.round(chars * .6));
+    for (let i = 0; i < n; i++) sfx('type' + (1 + i % 3), t + dur * i / n, vol);
+  };
+  const strike = (id, t, d = .28) => { A(id, t, { k: 0 }, 0); A(id, t, { k: 1 }, d, 'out'); sfx('swipe', t, .45); };
+  const blink = (t, base) => { dk(t, { lid: 96 }, .07, 'in'); dk(t + .1, { lid: base }, .1, 'out'); };
+  const walk = (t, px, dur = .8, hop = 9) => {
+    dk(t, { px }, dur, 'inOut');
+    const n = Math.max(2, Math.round(dur / .22)), h = dur / n;
+    for (let i = 0; i < n; i++) { dk(t + i * h, { ry: -hop, rr: i % 2 ? 2 : -2 }, h / 2, 'out'); dk(t + i * h + h / 2, { ry: 0, rr: 0 }, h / 2, 'in'); }
+    sfx('swipe', t, .3);
+  };
+  const wipe = tw => {
+    A('wipeA', tw, { o: 1, x: -2600 }, 0); A('wipeA', tw, { x: 2600 }, .9, 'inOut'); A('wipeA', tw + .95, { o: 0 }, 0);
+    A('wipeB', tw + .07, { o: 1, x: -2600 }, 0); A('wipeB', tw + .07, { x: 2600 }, .9, 'inOut'); A('wipeB', tw + 1.0, { o: 0 }, 0);
+    sfx('whoosh', tw + .12, .7);
+    return tw + .5;    // perdenin tam kapattığı an
+  };
+  const sideArms = { aL: P.sideL, aR: P.sideR };
+
+  // ================= 1 · SOĞUK AÇILIŞ =================
+  A('black', 0, { o: 1 }, 0);
+  ['cap', 'hudL', 'hudR'].forEach(id => A(id, 0, { o: 0 }, 0));
+  A('t2', 0, { o: 1 }, 0);
+  type('ty1', .55, .5, 5, .4);
+  A('cur1', L(1, 1), { o: 0 }, 0);
+  type('ty2', L(1, 1) - .1, 1.05, 18, .3);
+  const tB = Wd(1, 1, 'benim');
+  type('ty3', tB, LE(1, 1) - tB - .1, 20, .4);
+  A('t2', tB, { o: .45 }, .4);
+  const g1 = LE(1, 1) + .2;
+  A('black', g1, { jit: 18 }, .05); A('black', g1 + .32, { jit: 0 }, .05);
+  sfx('glitch', g1, .6);
+  A('black', S0(2) - .4, { y: -1180 }, .55, 'in');
+  sfx('whoosh', S0(2) - .42, .7);
+  A('black', S0(2) + .2, { o: 0 }, 0);
+
+  // ================= 2 · ÖDÜNÇ BEDEN =================
+  ['hudL', 'hudR'].forEach((id, i) => show(id, S0(2) + .3 + i * .1, { y: -60 }, .5, 'out'));
+  show('cap', S0(2) + .2, { y: 80 }, .5, 'out');
+  show('ph', S0(2) + .5, { s: .9 }, .6, 'out');
+  sfx('blink', S0(2) + .5, .5);
+  const tDrop = Wd(2, 0, 'ödünç') + .15;
+  dk(0, Object.assign(ex('def'), { o: 0, ry: -560, px: 960, py: 905, lips: 1 }), 0);
+  dk(tDrop - .45, { o: 1 }, 0);
+  dk(tDrop - .45, { ry: 0 }, .45, 'in');
+  sfx('whoosh_short', tDrop - .42, .5);
+  dk(tDrop, { sq: .8 }, .09, 'out'); dk(tDrop + .09, { sq: 1.07 }, .15, 'out'); dk(tDrop + .24, { sq: 1 }, .35, 'back');
+  sfx('thud', tDrop, .8); sfx('boing', tDrop + .04, .55);
+  A('ph', tDrop - .05, { o: 0 }, .12);
+  dk(tDrop + .3, ex('shock'), .12); dk(tDrop + .8, ex('def'), .4);
+  dk(tDrop + .5, { swing: .4 }, .4);
+
+  const tName = Wd(2, 1, 'Dakay');
+  stamp('nameDk', tName, { s: 1.8, r: -6 });
+  dk(tName, ex('smirk'), .3); fx('spark', tName + .1); sfx('sparkle', tName + .1, .4);
+  dk(tName + .1, { aR: P.waveR }, .25); dk(tName + .35, { aR: P.waveR2 }, .18); dk(tName + .53, { aR: P.waveR }, .18);
+  dk(tName + .71, { aR: P.waveR2 }, .18); dk(tName + .9, { aR: P.sideR }, .3);
+  const tGri = Wd(2, 1, 'Gri');
+  dk(tGri, ex('def'), .3);
+  show('coBody', tGri, { x: -40 }, .45, 'out'); A('coBody', tGri + .1, { k: 0 }, 0); A('coBody', tGri + .1, { k: 150 }, .4, 'out'); sfx('pop', tGri, .5);
+  const tGz = Wd(2, 1, 'güneş');
+  show('coGl', tGz, { x: 40 }, .45, 'out'); A('coGl', tGz + .1, { k: 0 }, 0); A('coGl', tGz + .1, { k: 120 }, .4, 'out'); sfx('pop2', tGz, .5);
+  dk(tGz + .35, { glare: .85 }, .12); dk(tGz + .6, { glare: 0 }, .35); sfx('sparkle', tGz + .35, .45);
+  dk(tGz + .2, { gy: -2 }, .15, 'out'); dk(tGz + .4, { gy: 0 }, .25);
+
+  const tKen = Wd(2, 2, 'Kendisi');
+  hide('nameDk', tKen - .1, { y: -40 }); hide('coBody', tKen - .1, { x: -40 }); hide('coGl', tKen - .05, { x: 40 });
+  dk(tKen, Object.assign(ex('angry'), { aL: P.hipL, aR: P.hipR, lips: 0, swing: 0 }), .35);
+  dk(tKen + .35, { tap: 1 }, .1);
+  fx('steam', tKen + .4); fx('steam', tKen + 1.5);
+  sfx('steam', tKen + .4, .55); sfx('steam', tKen + 1.5, .45);
+  stamp('grr', Wd(2, 2, 'sevinmedi') + .35, { s: 1.8, r: 8 });
+  dk(S1(2) - .5, { tap: 0 }, .1);
+  hide('grr', S1(2) - .4, { s: .6 });
+
+  // ================= 3 · İSİM =================
+  dk(S0(3), Object.assign(ex('meh'), sideArms, { lips: .8 }), .4);
+  walk(S0(3) + .05, 540, .85);
+  show('nmModel', L(3, 0) + .1, { x: -30 }, .4, 'out');
+  const tCl = Wd(3, 0, 'Claude');
+  show('nmClaude', tCl - .05, { y: 70, s: .92 }, .5, 'back'); sfx('whoosh_short', tCl - .05, .5);
+  dk(Wd(3, 1, 'Ama'), Object.assign(ex('sus'), { lips: 1 }), .3);
+  const tRk = Wd(3, 1, 'Rekt');
+  strike('nmClaude', tRk - .1, .25);
+  A('nmClaude', tRk + .2, { o: .35 }, .4);
+  A('nmModel', tRk + .2, { o: .35 }, .4);
+  stamp('nmRekt', tRk + .05, { s: 2.4, r: -8 });
+  dk(tRk + .05, Object.assign(ex('smirk'), { aR: P.pointR }), .3, 'out');
+  fx('spark', tRk + .25); sfx('sparkle', tRk + .25, .35);
+  show('nmSub', Wd(3, 1, 'düşünme'), { y: 30 }, .45, 'back'); sfx('pop', Wd(3, 1, 'düşünme'), .45);
+  dk(Wd(3, 1, 'ortağıyım') + .2, { aR: P.sideR }, .4);
+  ['nmModel', 'nmClaude', 'nmRekt', 'nmSub'].forEach((id, i) => hide(id, S1(3) - .7 + i * .04, { y: -40 }));
+
+  // ================= 4 · HAFIZA =================
+  const c4 = wipe(S1(3) - .5);
+  dk(c4, Object.assign(ex('meh'), sideArms, { px: 680, ry: 0, rr: 0 }), 0);
+  const s4 = S0(4) + .25;
+  dk(s4, { aR: P.peekLo }, .3);
+  dk(s4 + .3, { gu: 1, eo: 1, lid: 87.5, aR: P.peekHi }, .45); sfx('glasses', s4 + .3, .5);
+  dk(s4 + .8, { aR: P.sideR, rr: -3, swing: .25, lips: .55 }, .5);
+  dk(s4 + .9, { mo: 1 }, .4); dk(s4 + 1.5, { mo: 0 }, .3);
+  fx('zzz', s4 + 1.3, L(4, 1) - (s4 + 1.3));
+  sfx('snore', s4 + 1.1, .55);
+  const tHt = Wd(4, 0, 'hatırlamam');
+  show('memA', tHt - .1, { y: 40 }, .5, 'back'); sfx('pop', tHt - .1, .4);
+
+  const tUy = L(4, 1);
+  hide('memA', tUy, { y: -30 });
+  dk(tUy, { sq: .88 }, .1, 'out');
+  dk(tUy + .02, Object.assign(ex('shock'), { gu: 0, eo: 0, rr: 0, swing: 0, lips: 1 }), .16);
+  dk(tUy + .1, { sq: 1.08, ry: -34 }, .2, 'out'); dk(tUy + .3, { sq: .93, ry: 0 }, .22, 'in'); dk(tUy + .52, { sq: 1 }, .25, 'back');
+  sfx('jump', tUy + .08, .6); sfx('glasses', tUy + .05, .4); sfx('thud', tUy + .52, .5);
+  fx('exclaim', tUy + .1); fx('sweat', tUy + .15);
+  const tOt = Wd(4, 1, 'oturumda');
+  A('ms1', 0, { o: 0 }, 0); A('ms2', 0, { o: 0 }, 0); A('ms3', 0, { o: 0 }, 0);
+  A('memSess', tOt - .05, { o: 1 }, 0);
+  ['ms1', 'ms2', 'ms3'].forEach((id, i) => { show(id, tOt + i * .32, { y: 30, s: .7 }, .35, 'back'); sfx('tick', tOt + i * .32, .55); });
+  dk(tUy + 1.3, ex('def'), .4);
+  hide('memSess', L(4, 2) - .05, { y: -30 });
+
+  const tSis = Wd(4, 2, 'sistem');
+  dk(Wd(4, 2, 'Arda'), ex('sus'), .3);
+  show('memSys', tSis, { y: 20 }, .4, 'back'); sfx('pop2', tSis, .45);
+  dk(LE(4, 2), Object.assign(ex('smirk'), { lookX: 4 }), .4);
+  [['f1', 'not'], ['f2', 'yaptık'], ['f3', 'yarım'], ['f4', 'karar']].forEach(([id, w], i) => {
+    const t = Wd(4, 3, w) - .05;
+    A(id, t, { o: 0, x: 520, y: -260, r: 18 - i * 9, s: .8 }, 0);
+    A(id, t, { o: 1, x: 0, y: 0, r: i % 2 ? 1.5 : -1.5, s: 1 }, .55, 'back');
+    sfx('swipe', t, .5);
+  });
+  const tOk = Wd(4, 4, 'okumak') - .5;
+  dk(L(4, 4), Object.assign(ex('def'), { lookX: 5, look: 1.5 }), .4);
+  ['f1', 'f2', 'f3', 'f4'].forEach((id, i) => { A(id, tOk + i * .28, { hl: 0 }, 0); A(id, tOk + i * .28, { hl: 1 }, .35, 'out'); sfx('tick', tOk + i * .28, .35); });
+  dk(tOk, { glare: .8 }, .15); dk(tOk + .5, { glare: 0 }, .4);
+
+  const tKf = Wd(4, 5, 'kafamda');
+  dk(tKf - .15, Object.assign(ex('meh'), { aR: P.templeR, lookX: 0, look: 0 }), .3);
+  dk(tKf + .15, { nay: 1 }, .15); dk(tKf + .85, { nay: 0 }, .2);
+  const tKl = Wd(4, 5, 'klasörde');
+  pop('folder', tKl - .15, .3, 'pop');
+  dk(tKl - .1, Object.assign(ex('smirk'), { aR: P.presentR }), .35);
+  [[180, 140], [-220, 140], [180, -70], [-220, -70]].forEach(([dx, dy], i) => {
+    const id = 'f' + (i + 1);
+    A(id, tKl + .1 + i * .07, { x: dx, y: dy, s: .15, o: 0, r: 0 }, .42, 'in');
+  });
+  sfx('whoosh_short', tKl + .1, .5);
+  A('folder', tKl + .55, { s: 1.12 }, .1, 'out'); A('folder', tKl + .65, { s: 1 }, .3, 'back'); sfx('pop2', tKl + .58, .5);
+  dk(LE(4, 5) + .2, sideArms, .4);
+  hide('folder', S1(4) - .45, { y: -40, s: .9 }); hide('memSys', S1(4) - .45);
+
+  // ================= 5 · HATA =================
+  dk(S0(5) - .3, ex('def'), .3);
+  walk(S0(5) - .3, 960, .8);
+  const tHa = Wd(5, 0, 'Hata');
+  show('errT', tHa - .05, { s: 1.3 }, .25, 'out'); sfx('glitch', tHa - .05, .55);
+  A('errT', tHa, { jit: 16 }, .05); A('errT', tHa + .3, { jit: 0 }, .05);
+  dk(tHa, Object.assign(ex('meh'), { aL: P.shrugL, aR: P.shrugR, rr: 0 }), .3, 'back');
+  dk(LE(5, 0), sideArms, .35);
+  hide('errT', L(5, 1) + .2, { y: -40 });
+
+  const tCe = Wd(5, 1, 'çenesine');
+  dk(tCe - .1, { aR: P.chinR }, .3);
+  dk(tCe + .1, { gc: 1, eo: 1, lid: 83, pupil: 1.2 }, .45, 'back'); sfx('glasses', tCe + .1, .55);
+  dk(tCe + .5, Object.assign(ex('meh'), { aR: P.sideR }), .35);
+  pop('errX', tCe + .55, .3, null); sfx('buzz', tCe + .6, .5);
+  const tAl = Wd(5, 1, 'alnına');
+  dk(tAl - .2, { aR: P.peekLo }, .25);
+  dk(tAl, { gc: 0, gu: 1, aR: P.peekHi }, .45, 'back'); sfx('glasses', tAl, .55);
+  dk(tAl + .45, Object.assign(ex('soft'), { aR: P.sideR }), .4);
+  pop('errOk', tAl + .45, .3, null); sfx('ding', tAl + .5, .5);
+  A('errX', tAl + .5, { o: .35, s: .85 }, .3);
+
+  const t52 = L(5, 2);
+  hide('errX', t52 - .2, { y: 40 }); hide('errOk', t52 - .15, { y: 40 });
+  dk(t52 - .1, { aR: P.peekHi }, .25); dk(t52 + .15, { gu: 0, eo: 0, aR: P.peekLo }, .35); sfx('glasses', t52 + .15, .45);
+  dk(t52 + .5, Object.assign(ex('def'), sideArms), .35);
+  walk(t52 + .55, 560, .8);
+  show('rules', t52 + .45, { x: 420, r: 3 }, .6, 'back'); sfx('swipe', t52 + .45, .5);
+  const tKr = Wd(5, 2, 'kurallar');
+  type('tyR1', tKr, 1.1, 32, .25);
+  A('r1', 0, { o: 1 }, 0);
+  [['r2', Wd(5, 2, 'düzeltme')], ['r3', Wd(5, 2, 'kural', 1)], ['r4', Wd(5, 2, 'olur')]].forEach(([id, t]) => {
+    A(id, 0, { o: 0 }, 0); show(id, t, { x: 40 }, .35, 'out'); sfx('tick', t, .5);
+  });
+  dk(Wd(5, 2, 'düzeltme'), Object.assign(ex('smirk'), { lookX: -4 }), .35);
+  const tAy = Wd(5, 2, 'Aynı');
+  stamp('once', tAy, { s: 2, r: -10 });
+  dk(tAy, Object.assign(ex('def'), { lookX: 0, nod: 1 }), .3); dk(LE(5, 2) + .1, { nod: 0 }, .2);
+  hide('rules', S1(5) - .5, { x: 300 }); hide('once', S1(5) - .5, { s: .7 });
+
+  // ================= 6 · ROLLER =================
+  const c6 = wipe(S1(5) - .5);
+  dk(c6, Object.assign(ex('def'), sideArms, { px: 960, sc: .92 }), 0);
+  show('colA', L(6, 0) + .2, { x: -80 }, .5, 'out'); sfx('whoosh_short', L(6, 0) + .2, .45);
+  dk(Wd(6, 0, 'vermem'), { nay: 1 }, .12); dk(Wd(6, 0, 'vermem') + .6, { nay: 0 }, .15);
+  [['a1', 'Teknoloji'], ['a2', 'mimari'], ['a3', 'kapsam']].forEach(([id, w]) => {
+    const t = Wd(6, 0, w); A(id, t, { k: 0 }, 0); A(id, t, { k: 1 }, .3, 'back'); sfx('tick', t, .55);
+  });
+  dk(Wd(6, 0, 'Teknoloji') - .2, { aL: P.pointL }, .3);
+  dk(Wd(6, 0, 'Arda'), Object.assign(ex('smirk'), { aL: P.pointL }), .3);
+  show('colR', L(6, 1) - .1, { x: 80 }, .5, 'out'); sfx('whoosh_short', L(6, 1) - .1, .45);
+  dk(L(6, 1), Object.assign(ex('def'), { aL: P.sideL, aR: P.pointR }), .35);
+  [['b1', 'önerir'], ['b2', 'uygular'], ['b3', 'parçalara']].forEach(([id, w]) => {
+    const t = Wd(6, 1, w); A(id, t, { k: 0 }, 0); A(id, t, { k: 1 }, .3, 'back'); sfx('tick', t, .55);
+  });
+  const tKt = Wd(6, 2, 'katılmıyorsam');
+  hide('colA', tKt - .2, { x: -700 }, .4); hide('colR', tKt - .2, { x: 700 }, .4); sfx('whoosh', tKt - .2, .45);
+  dk(tKt - .1, Object.assign(ex('sus'), sideArms, { sc: 1.06 }), .35);
+  const tSy = Wd(6, 2, 'söylerim');
+  dk(tSy, Object.assign(ex('angry'), { aL: P.hipL, aR: P.hipR }), .3); fx('exclaim', tSy + .1); sfx('pop2', tSy + .1, .45);
+  const tBs = Wd(6, 2, 'başını');
+  dk(tBs - .3, Object.assign(ex('smirk', { dim: 1 }), sideArms, { nod: 1.3 }), .3);
+  show('yes', tBs - .2, { x: 40 }, .35, 'out');
+  ['blink', 'blink', 'blink'].forEach((s, i) => sfx(s, tBs - .1 + i * .24, .4));
+  const tIs = Wd(6, 2, 'işe');
+  hide('yes', tIs - .1, { x: 40 });
+  dk(tIs - .05, Object.assign(ex('angry'), { nod: 0, nay: 1.2 }), .2);
+  stamp('nope', tIs + .1, { s: 2.2, r: -14 }); A('nope', tIs + .45, { r: -5 }, .2);
+  sfx('buzz', tIs + .2, .5);
+  dk(LE(6, 2) + .1, Object.assign(ex('def'), { nay: 0, sc: .92 }), .3);
+  hide('nope', S1(6) - .45, { s: .6 });
+
+  // ================= 7 · BİRLİKTE =================
+  dk(S0(7) - .4, Object.assign(ex('smirk'), { sc: .82 }), .3);
+  walk(S0(7) - .4, 270, .9);
+  dk(S0(7) + .6, { aL: P.hipL, aR: P.hipR }, .35);
+  [['c1', L(7, 0)], ['c2', L(7, 1)], ['c3', L(7, 2)]].forEach(([id, t], i) => {
+    A(id, t - .1, { o: 0, y: 700, r: -10 + i * 6 }, 0); A(id, t - .1, { o: 1, y: 0, r: i === 1 ? 1.5 : -1.5 }, .6, 'back');
+    sfx('whoosh_short', t - .1, .5); sfx('thud', t + .35, .35);
+  });
+  const tPf = Wd(7, 0, 'portföy');
+  A('cnt1', 0, { cnt: 0 }, 0); A('cnt1', tPf, { cnt: 12 }, 1.0, 'out');
+  for (let i = 0; i < 6; i++) sfx('tick', tPf + i * .16, .3);
+  const tLf = Wd(7, 1, 'laf');
+  dk(tLf, Object.assign(ex('smirk'), { aR: P.waveR }), .25); dk(tLf + .25, { aR: P.waveR2 }, .18); dk(tLf + .43, { aR: P.hipR }, .3);
+  fx('spark', tLf + .1); sfx('sparkle', tLf + .1, .4);
+  const tGc = Wd(7, 2, 'gece');
+  A('c3', 0, { mm: 0, hh: 240 }, 0); A('c3', tGc, { mm: 1080, hh: 330 }, 1.6, 'inOut');
+  sfx('riser', tGc - .2, .3);
+  const tOn = Wd(7, 2, 'denetleyen');
+  dk(tOn, Object.assign(ex('sus'), { aR: P.pointR }), .3); dk(tOn + 1.2, { aR: P.hipR }, .3);
+  ['c1', 'c2', 'c3'].forEach((id, i) => hide(id, S1(7) - .6 + i * .07, { y: -620, r: 6 }, .45, 'in'));
+  sfx('whoosh', S1(7) - .6, .5);
+
+  // ================= 8 · SÖYLEMEK İSTEDİĞİM =================
+  A('warm', S0(8) - .2, { o: 1 }, 1.4);
+  A('grid', S0(8) - .2, { o: .25 }, 1.4); A('ground', S0(8) - .2, { o: 0 }, .8);
+  dk(S0(8) - .2, Object.assign(ex('def'), sideArms), .3);
+  walk(S0(8) - .2, 960, .9, 7);
+  dk(S0(8) + .75, { sc: 1.42, py: 420 + 388 * 1.42 }, 2.6, 'inOut');
+  dk(S0(8) + 3.4, { sc: 1.52, py: 420 + 388 * 1.52 }, S1(8) - S0(8) - 3.6, 'linear');
+  const s8 = S0(8) + .85;
+  dk(s8, { aR: P.peekLo }, .3);
+  dk(s8 + .32, Object.assign(ex('soft'), { gu: 1, eo: 1, lid: 81, pupil: 1.2, aR: P.peekHi }), .55); sfx('glasses', s8 + .32, .4);
+  dk(s8 + .95, { aR: P.sideR }, .5);
+  blink(L(8, 0) + 1.3, 81);
+  const tBe = Wd(8, 1, 'backend');
+  show('goal', tBe - .1, { x: -40 }, .5, 'out'); sfx('pop', tBe - .1, .35);
+  show('snip', Wd(8, 1, 'kodunun') - .1, { x: 40, r: 2 }, .5, 'out'); sfx('swipe', Wd(8, 1, 'kodunun') - .1, .35);
+  const tEl = Wd(8, 1, 'elimden');
+  dk(tEl - .2, Object.assign(ex('sad'), { look: 3, lid: 85, pupil: 0 }), .6);
+  blink(LE(8, 1) - .4, 85);
+  hide('goal', L(8, 2) - .3, { x: -40 }); hide('snip', L(8, 2) - .3, { x: 40 });
+  dk(L(8, 2) - .1, Object.assign(ex('soft'), { look: 0, lid: 80.5, pupil: 1.2 }), .5);
+  show('bana', L(8, 2) + .05, { y: 30 }, .45, 'out');
+  strike('bana', Wd(8, 2, 'değil') + .15, .3);
+  const tSa = Wd(8, 2, 'sana');
+  stamp('sana', tSa - .05, { s: 1.9, r: 6 });
+  fx('hearts', tSa + .2); sfx('sparkle', tSa + .15, .3);
+  blink(LE(8, 2) - .3, 80.5);
+  hide('bana', L(8, 3) - .3, { y: -30 }); hide('sana', L(8, 3) - .3, { y: -30 });
+  show('chain', L(8, 3) - .05, { y: -30 }, .45, 'out'); sfx('whoosh_short', L(8, 3) - .05, .35);
+  const tNd = Wd(8, 3, 'neden');
+  A('hot', tNd, { k: 0 }, 0); A('hot', tNd, { k: 1 }, .35, 'back'); sfx('ding', tNd + .05, .35);
+  dk(tNd + .1, { nod: .6 }, .2); dk(tNd + 1.1, { nod: 0 }, .3);
+  hide('chain', S1(8) - .3, { y: -30 });
+
+  // ================= 9 · KAPANIŞ =================
+  A('warm', S0(9) - .1, { o: 0 }, 1.0); A('grid', S0(9) - .1, { o: 1 }, 1.0); A('ground', S0(9) + .3, { o: 1 }, .6);
+  const s9 = S0(9) - .1;
+  dk(s9, { aR: P.peekHi }, .3);
+  dk(s9 + .3, { gu: 0, eo: 0, aR: P.peekLo }, .4); sfx('glasses', s9 + .3, .5);
+  dk(s9 + .7, Object.assign(ex('def'), sideArms, { sc: 1, py: 905 }), .9, 'inOut');
+  show('arac', Wd(9, 0, 'araç') - .1, { y: 30 }, .4, 'out');
+  strike('arac', Wd(9, 0, 'değil') + .1, .3);
+  stamp('ortak', Wd(9, 0, 'ortak') - .05, { s: 2, r: -6 });
+  dk(Wd(9, 0, 'ortak'), ex('smirk'), .3);
+  hide('arac', L(9, 1) - .25); hide('ortak', L(9, 1) - .25);
+  dk(Wd(9, 1, 'unutmam'), ex('sus'), .3);
+  const tYz = Wd(9, 1, 'yazarım');
+  A('yaz', L(9, 1) + .2, { o: 1 }, .3);
+  type('tyYaz', tYz - .05, .55, 8, .4);
+  dk(tYz, ex('smirk'), .3);
+  hide('yaz', L(9, 2) - .15);
+  const tGr = L(9, 2);
+  dk(tGr - .1, Object.assign(ex('smirk'), { aR: P.waveR }), .25);
+  for (let i = 0; i < 5; i++) { dk(tGr + .15 + i * .36, { aR: P.waveR2 }, .18); dk(tGr + .33 + i * .36, { aR: P.waveR }, .18); }
+  fx('spark', tGr + .2); sfx('sparkle', tGr + .2, .45);
+  show('logo', tGr + .1, { y: -50, s: .9 }, .55, 'back'); sfx('stamp', tGr + .3, .45);
+  const tEnd = LE(9, 2);
+  dk(tGr + 2.1, { aR: P.sideR }, .3);
+  hide('cap', tEnd + .4, { y: 80 }, .4);
+
+  // son şaka: Dakay yüzünü geri ister
+  const tG = Math.max(tEnd + 1.0, tGr + 2.45);   // el sallama bitmeden şaka başlamasın
+  hide('logo', tG - .2, { y: -40 });
+  dk(tG, Object.assign(ex('angry'), { aL: P.hipL, aR: P.hipR, lips: 0 }), .3, 'back');
+  dk(tG + .3, { tap: 1 }, .1);
+  fx('steam', tG + .3); sfx('steam', tG + .3, .5);
+  pop('bubble', tG + .45, .2, 'pop2');
+  type('tyBub', tG + .7, .8, 16, .35);
+  fx('steam', tG + 1.8); sfx('steam', tG + 1.8, .4);
+};
+</script>
+    <script>/* src/main.js */
+// Bağlama: DOM'u toplar, koreografiyi çalıştırır, her kareyi render(t) ile çizer ve
+// HyperFrames'e seek edilebilir bir timeline kaydeder.
+(function () {
+  const E = window.DK_ENGINE, TL = window.TIMELINE;
+  const TOTAL = +document.getElementById('root').getAttribute('data-duration');
+  const f = E.f;
+
+  // Dakay + mini kopyalar (kart 2 ve site önizlemesi)
+  const dkHost = document.getElementById('dk');
+  const dk = new E.Rig(dkHost, 'dk');
+  const MINI = [['mini1', 'smirk', .2], ['mini2', 'def', .25], ['mini3', 'sus', .25], ['mini4', 'angry', .25], ['mini5', 'shock', .25]].map(([id, exn, s]) => {
+    const host = document.getElementById(id);
+    const wrap = document.createElement('div'); wrap.className = 'dk'; wrap.style.transform = `scale(${s})`; wrap.style.transformOrigin = '0 0';
+    host.appendChild(wrap);
+    const r = new E.Rig(wrap, id);
+    const st = Object.assign({}, JSON.parse(JSON.stringify(E.RIG_DEFAULTS)), JSON.parse(JSON.stringify(E.EX[exn])));
+    if (exn === 'shock') { st.aL = E.P.pointL.slice(); }
+    if (exn === 'angry') { st.aL = E.P.hipL.slice(); st.aR = E.P.hipR.slice(); }
+    if (exn === 'smirk') { st.aR = E.P.waveR.slice(); }
+    return { r, st, ph: id.length * .7 };
+  });
+
+  // koreografi
+  window.CHOREO(E, () => {});
+  E.def('dk', E.RIG_DEFAULTS);
+
+  // zamanlanmış DOM nesneleri
+  const OBJ = [];
+  const ids = new Set(Object.keys(E.TR).filter(k => k.startsWith('e:')).map(k => k.slice(2, k.indexOf('.'))));
+  document.querySelectorAll('.el').forEach(n => ids.add(n.id));
+  ids.forEach(id => {
+    const node = document.getElementById(id);
+    if (!node) { console.warn('öğe yok', id); return; }
+    const isEl = node.classList.contains('el');
+    const keys = new Set(E.keysOf('e:' + id));
+    const defs = { x: 0, y: 0, s: 1, r: 0, o: isEl ? 0 : 1, jit: 0, type: 0, cnt: 0 };
+    keys.forEach(k => { if (!(k in defs)) defs[k] = 0; });
+    E.def('e:' + id, defs);
+    const xf = isEl || ['x', 'y', 's', 'r', 'jit'].some(k => keys.has(k));
+    const vars = [...keys].filter(k => !(k in { x: 1, y: 1, s: 1, r: 1, o: 1, jit: 1, type: 1, cnt: 1 }));
+    OBJ.push({ id, node, isEl, keys, defs, xf, vars, full: node.getAttribute('data-type'), cnt: node.hasAttribute('data-cnt'), last: '' });
+  });
+  E.finalize();
+
+  const CURS = [...document.querySelectorAll('.cur')];
+  const capBox = document.getElementById('capBox');
+  const hudN = document.getElementById('hudN'), hudT = document.getElementById('hudT');
+  const bars = [...document.querySelectorAll('#bars i')];
+  let capLine = -2, capSpans = [], hudKey = '';
+
+  function caption(t) {
+    let li = -1;
+    E.LINES.forEach((l, i) => { if (l.scene > 1 && t >= l.start - .08 && t <= l.start + l.dur + .45) li = i; });
+    if (li !== capLine) {
+      capLine = li;
+      if (li < 0) { capBox.style.opacity = 0; capSpans = []; }
+      else {
+        capBox.style.opacity = 1;
+        capBox.innerHTML = E.LINES[li].words.map(w => `<span class="w">${w.disp || w.w}</span>`).join(' ');
+        capSpans = [...capBox.children];
+      }
+    }
+    if (li >= 0) {
+      const ws = E.LINES[li].words;
+      ws.forEach((w, k) => {
+        const on = t >= w.t, now = on && t < w.t + w.d + .05;
+        capSpans[k].className = 'w' + (on ? ' on' : '') + (now ? ' now' : '');
+      });
+    }
+  }
+
+  const DBG = window.DK_DEBUG_T ? Object.assign(document.body.appendChild(document.createElement('div')), { style: 'position:fixed;left:20px;bottom:20px;z-index:99;font:700 60px monospace;background:#ff0;color:#000;padding:6px' }) : null;
+  function render(t) {
+    if (DBG) DBG.textContent = 't=' + t.toFixed(3) + ' gsap=' + (window.__timelines && window.__timelines.main ? window.__timelines.main.time().toFixed(3) : '-');
+    // DOM nesneleri
+    for (const o of OBJ) {
+      const s = E.state('e:' + o.id, o.defs, t);
+      if (o.xf) {
+        const jx = s.jit ? (Math.sin(t * 71) + Math.sin(t * 43.7) * .6) * s.jit : 0;
+        const jy = s.jit ? Math.sin(t * 57.3) * s.jit * .4 : 0;
+        o.node.style.transform = `translate(${f(s.x + jx)}px, ${f(s.y + jy)}px) rotate(${f(s.r)}deg) scale(${f(s.s)})`;
+      }
+      if (o.isEl || o.keys.has('o')) o.node.style.opacity = f(Math.max(0, Math.min(1, s.o)));
+      if (o.full !== null && o.keys.has('type')) {
+        const txt = o.full.slice(0, Math.round(s.type * o.full.length));
+        if (txt !== o.last) { o.last = txt; o.node.textContent = txt; }
+      }
+      if (o.cnt) { const v = String(Math.round(s.cnt)); if (v !== o.last) { o.last = v; o.node.textContent = v; } }
+      for (const k of o.vars) o.node.style.setProperty('--' + k, f(s[k]));
+    }
+    for (const c of CURS) c.style.visibility = Math.floor(t * 2.4) % 2 === 0 ? 'visible' : 'hidden';
+
+    // Dakay
+    const S = E.state('dk', E.RIG_DEFAULTS, t);
+    const talk = E.talkAt(t);
+    dkHost.style.transform = `translate(${f(S.px - 300)}px, ${f(S.py - 554)}px) scale(${S.sc.toFixed(4)})`;
+    dkHost.style.opacity = f(S.o);
+    dk.draw(S, t, talk);
+    for (const m of MINI) m.r.draw(m.st, t + m.ph, 0);
+
+    // HUD
+    const sc = TL.scenes.find(s => t >= s.start && t < s.end) || TL.scenes[TL.scenes.length - 1];
+    const k = sc.n + sc.title;
+    if (k !== hudKey) { hudKey = k; hudN.textContent = String(sc.n).padStart(2, '0'); hudT.textContent = sc.title; }
+    bars.forEach((b, i) => { const v = E.talkAt(t - i * .035); b.style.height = f(6 + 24 * v) + 'px'; });
+    caption(t);
+  }
+
+  // Not: HyperFrames içinde tween'in ara değeri doğrusal gelmiyor (9.7 sn'de 8.77 ölçüldü),
+  // timeline'ın kendi zamanı ise doğru. Setter yalnızca tetikleyici; zaman tl.time()'dan okunur.
+  const driver = { _t: -1 };
+  Object.defineProperty(driver, 't', { get() { return this._t; }, set(v) { this._t = v; render(tl.time()); } });
+  const tl = gsap.timeline({ paused: true });
+  tl.to(driver, { t: TOTAL, duration: TOTAL, ease: 'none', lazy: false }, 0);
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  render(0);
+  window.__dkRender = render;   // hata ayıklama
+})();
+</script>
+  </body>
+</html>

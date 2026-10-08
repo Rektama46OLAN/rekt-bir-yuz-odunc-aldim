@@ -1,0 +1,25 @@
+# kontrol kareleri ve ses denemeleri
+snaps/
+voice-test/
+
+# ilk sürüm (edge-tts); geçerli video v2
+Rekt-bir-yuz-odunc-aldim.mp4
+.*.hf-transaction-*/
+
+# yeniden üretilebilen ses (make_audio.py, el_tts.py, build.mjs)
+dakay/assets/sfx/*.wav
+dakay/assets/sfx_mix.wav
+dakay/assets/music/bed.wav
+dakay/assets/music/bed.mp3
+dakay/assets/voice/*.wav
+dakay/assets/voice/s[0-9]*_*.mp3
+
+# HyperFrames ve araç önbellekleri
+dakay/.hyperframes/
+dakay/.thumbnails/
+dakay/.waveform-cache/
+dakay/renders/
+dakay/snapshots/
+node_modules/
+__pycache__/
+.playwright-mcp/

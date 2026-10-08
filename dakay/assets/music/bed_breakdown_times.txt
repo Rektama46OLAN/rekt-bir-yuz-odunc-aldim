@@ -1,0 +1,23 @@
+Dakay music bed - section boundaries (seconds from file start)
+BPM: 105.056   (beat = 0.5711 s, bar = 2.2845 s, 4/4, swung 8ths)
+  tempo picked so 7.0 / 105.0 / 124.6 all fall exactly on bar lines
+total_seconds: 130.000
+
+cold_open_silence: 0.000 - 6.600
+music_start: 6.600   (fade-in 0.5 s, full groove from the first bar)
+groove: 6.600 - 97.980   (bars 1-40)
+lift_swell_start: 84.273
+lift: 85.415   (16th ghost hats, octave-doubled keys top, bass octave pops; until breakdown)
+fills (drum fill start, last bar of each 8-bar phrase): 24.448, 42.724, 61.000, 79.276, 97.552, 122.681
+pluck_motif_starts: 23.734, 42.010, 60.286, 78.562, 96.838, 121.967
+breakdown_start: 97.980   (drums out; soft keys + sub + quiet bell melody)
+breakdown_end: 116.256   (= outro start, drums back gently)
+outro: 116.256 - 123.110
+final_chord: 123.110   (Am9 rings out)
+fade_out: 124.400 - 125.900
+silent_from: 125.900 - 130.000   (digital silence)
+
+groove chord loop (1 bar each): Am9 | D9 | Fmaj9 | E9
+breakdown chords: Fmaj9 | Em9 | Dm9 | Am9 | Fmaj9 | Em9 | Dm9 | E9
+outro chords: Am9 | D9 | E9 | (final) Am9
+bar_downbeats: 6.600, 8.884, 11.169, 13.454, 15.738, 18.023, 20.307, 22.592, 24.876, 27.161, 29.445, 31.730, 34.014, 36.299, 38.583, 40.868, 43.152, 45.437, 47.721, 50.006, 52.290, 54.575, 56.859, 59.144, 61.428, 63.713, 65.997, 68.282, 70.566, 72.851, 75.135, 77.420, 79.704, 81.989, 84.273, 86.558, 88.842, 91.127, 93.411, 95.696, 97.980, 100.265, 102.549, 104.834, 107.118, 109.403, 111.687, 113.972, 116.256, 118.541, 120.825, 123.110
